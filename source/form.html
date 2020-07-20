@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<!--Блок на странице по БЭМ класс page-->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
+  <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
+</head>
+
+<body class="page__body">
+  <!--Элеменнт блока страницы двойное подчеркивание-->
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
+    </a>
+    <nav class="navigation">
+      <button type="button" class="navigation__toggle">
+        <span class="visually-hidden">Развернуть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="link navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="navigation__item  navigation__item--active">
+          <a class="link navigation__link">Конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+            target="_blank">htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1>Конкурсы</h1>
+    <section class="hero">
+      <h2 class="visually-hidden">Регистрация на конкурс</h2>
+      <div class="hero__wrap">
+        <p class="hero__title">Конкурс на самое безбашенное
+          путешествие с Пинк</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="index.html">
+      <img src="https://via.placeholder.com/74x23" alt="Логотип сайта Pink">
+    </a>
+    <ul class="socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--twitter" href="#!">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--facebook" href="#!">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--youtube" href="#!">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <div class="developed">
+      <p class="developed__text">Разработано</p>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">htmlacademy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

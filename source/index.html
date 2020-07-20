@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html lang="ru" class="page">
+<!--Блок на странице по БЭМ класс page-->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
+  <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
+</head>
 
-  </body>
+<body class="page__body">
+  <!--Элеменнт блока страницы двойное подчеркивание-->
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
+    </a>
+    <nav class="navigation">
+      <button type="button" class="navigation__toggle">
+        <span class="visually-hidden">Развернуть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--active">
+          <a class="link navigation__link">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+            target="_blank">htmlacademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Мобильное приложение Pink раскрасит Ваши серые будни в розовые цвета</h1>
+    <section class="hero">
+      <h2 class="visually-hidden">Здесь вы может загрузить приложение Pink</h2>
+      <div class="hero__wrap hero__wrap--index">
+        <p class="hero__title">Взгляните на жизнь иначе!</p>
+        <img src="https://via.placeholder.com/320x286" width="320" height="286" alt="Изображение преобразованного вида">
+      </div>
+    </section>
+    <section class="download-application">
+      <a class="download-application__link" href="https://www.apple.com/ru/ios/app-store/" target="_blank">Скачать
+        приложение</a>
+      <ul class="download-application__list">
+        <li class="download-application__item">
+          <a class="download-application__link-icon" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
+            <span class="visually-hidden">Apple</span>
+          </a>
+        </li>
+        <li class="download-application__item">
+          <a class="download-application__link-icon" href="https://play.google.com/store/apps?hl=ru" target="_blank">
+            <span class="visually-hidden">Android</span>
+          </a>
+        </li>
+        <li class="download-application__item">
+          <a class="download-application__link-icon" href="https://www.microsoft.com/ru-ru/store/apps" target="_blank">
+            <span class="visually-hidden">Microsoft</span>
+          </a>
+        </li>
+      </ul>
+      <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества приложения Pink</h2>
+      <header class="advantages-header">
+        <p class="advantages-header__text">Устали от серости мегаполиса?</p>
+        <p class="advantages-header__text">Нам есть, что вам предложить!</p>
+      </header>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <footer class="advantages__footer">
+        <img src="https://via.placeholder.com/157x320" width="157" height="320" alt="Пример изображения">
+      </footer>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img src="https://via.placeholder.com/74x23" alt="Логотип сайта Pink">
+    </a>
+    <ul class="socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--twitter" href="#!">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--facebook" href="#!">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--youtube" href="#!">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <div class="developed">
+      <p class="developed__text">Разработано</p>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">htmlacademy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
