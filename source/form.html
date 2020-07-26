@@ -4,44 +4,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>HTML Academy: Пинк Форма</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
   <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <!--Элеменнт блока страницы двойное подчеркивание-->
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
-    </a>
-    <nav class="navigation">
-      <button type="button" class="navigation__toggle">
-        <span class="visually-hidden">Развернуть меню</span>
-      </button>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="link navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link navigation__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="navigation__item  navigation__item--active">
-          <a class="link navigation__link">Конкурс</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-            target="_blank">htmlacademy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__wrap">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+      </a>
+      <nav class="navigation">
+        <button type="button" class="navigation__toggle">
+          <span class="visually-hidden">Развернуть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="link navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="navigation__item  navigation__item--active">
+            <a class="link navigation__link">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+              target="_blank">htmlacademy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
-    <h1>Конкурсы</h1>
+    <h1 class="visually-hidden">Конкурсы</h1>
     <section class="hero">
       <h2 class="visually-hidden">Регистрация на конкурс</h2>
       <div class="hero__wrap">
-        <p class="hero__title">Конкурс на самое безбашенное
+        <p class="hero__text">Конкурс на самое безбашенное
           путешествие с Пинк</p>
       </div>
     </section>
@@ -118,18 +122,18 @@
             путешествовали?</legend>
           <ul class="form__list-radio">
             <li class="form__item-radio">
-              <input class="visually-hidden" type="radio" id="field-radio-1"
-                name="radio-applications" value="pink-ios" checked>
+              <input class="visually-hidden" type="radio" id="field-radio-1" name="radio-applications" value="pink-ios"
+                checked>
               <label for="field-radio-1" class="form__label-radio">Pink для iOS</label>
             </li>
             <li class="form__item-radio">
-              <input class="visually-hidden" type="radio" id="field-radio-2"
-                name="radio-applications" value="pink-android">
+              <input class="visually-hidden" type="radio" id="field-radio-2" name="radio-applications"
+                value="pink-android">
               <label for="field-radio-2" class="form__label-radio">Pink на Android</label>
             </li>
             <li class="form__item-radio">
-              <input class="visually-hidden" type="radio" id="field-radio-3"
-                name="radio-applications" value="pink-windows-phone">
+              <input class="visually-hidden" type="radio" id="field-radio-3" name="radio-applications"
+                value="pink-windows-phone">
               <label for="field-radio-3" class="form__label-radio">Windows Phone</label>
             </li>
           </ul>
@@ -157,7 +161,7 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img src="https://via.placeholder.com/74x23" alt="Логотип сайта Pink">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
     </a>
     <ul class="socials">
       <li class="socials__item">
