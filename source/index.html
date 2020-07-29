@@ -5,44 +5,49 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
   <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <!--Элеменнт блока страницы двойное подчеркивание-->
+  <!--Элеменнт блока двойное подчеркивание-->
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
-    </a>
-    <nav class="navigation">
-      <button type="button" class="navigation__toggle">
-        <span class="visually-hidden">Развернуть меню</span>
-      </button>
-      <ul class="navigation__list">
-        <li class="navigation__item navigation__item--active">
-          <a class="link navigation__link">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link navigation__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link navigation__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-            target="_blank">htmlacademy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__wrap">
+      <a class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+      </a>
+      <nav class="navigation">
+        <button type="button" class="navigation__toggle">
+          <span class="visually-hidden">Развернуть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a class="link navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+              target="_blank">htmlacademy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение Pink раскрасит Ваши серые будни в розовые цвета</h1>
     <section class="hero">
       <h2 class="visually-hidden">Здесь вы может загрузить приложение Pink</h2>
       <div class="hero__wrap hero__wrap--index">
-        <p class="hero__title">Взгляните на жизнь иначе!</p>
-        <img src="https://via.placeholder.com/320x286" width="320" height="286" alt="Изображение преобразованного вида">
+        <p class="hero__text">Взгляните на жизнь иначе!</p>
+        <img class="hero__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+          alt="Изображение преобразованного вида">
       </div>
     </section>
     <section class="download-application">
@@ -69,9 +74,9 @@
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-      <header class="advantages-header">
-        <p class="advantages-header__text">Устали от серости мегаполиса?</p>
-        <p class="advantages-header__text">Нам есть, что вам предложить!</p>
+      <header class="advantages__header">
+        <p class="advantages__header-text">Устали от серости мегаполиса?</p>
+        <p class="advantages__header-text">Нам есть, что вам предложить!</p>
       </header>
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -91,14 +96,14 @@
         </li>
       </ul>
       <footer class="advantages__footer">
-        <img src="https://via.placeholder.com/157x320" width="157" height="320" alt="Пример изображения">
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Пример изображения">
       </footer>
     </section>
     <section class="comments">
       <h4 class="visually-hidden">Комментарии</h4>
       <div class="comments__wrap slider">
         <div class="comments__list slider__list">
-          <blockquote class="comments__item slider__item">
+          <blockquote class="comments__item slider__item slider__item--active">
             <cite class="comments__title">Николай Петров</cite>
             <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -163,17 +168,17 @@
         <!-- Круги переключения слайдера -->
         <ul class="slider__dots">
           <li class="slider__dots-item slider__dots-item--active">
-            <button class="slider__control">
+            <button type="button" class="slider__control">
               <span class="visually-hidden">Первый слайд</span>
             </button>
           </li>
           <li class="slider__dots-item">
-            <button class="slider__control">
+            <button type="button" class="slider__control">
               <span class="visually-hidden">Второй слайд</span>
             </button>
           </li>
           <li class="slider__dots-item">
-            <button class="slider__control">
+            <button type="button" class="slider__control">
               <span class="visually-hidden">Третий слайд</span>
             </button>
           </li>
@@ -181,23 +186,25 @@
       </div>
     </section>
     <section class="contacts">
-      <p class="contacts__general contacts__text">Остались вопросы?</p>
-      <p class="contacts__general contacts__text">Свяжитесь с нами!</p>
-      <h4 class="contacts__general contacts__title">Звоните:</h4>
-      <a class="contacts__general contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-      <h4 class="contacts__general contacts__title">Пишите:</h4>
-      <a class="contacts__general contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      <h4 class="contacts__general contacts__title">Приезжайте в гости:</h4>
-      <p class="contacts__general contacts__text">ул. Большая Конюшенная, 19/8</p>
-      <a href="" class="contacts__link-map">
-        <img src="https://via.placeholder.com/320x200" width="320" height="200"
-          alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19">
-      </a>
+      <div class="contacts__wrap">
+        <p class="contacts__general contacts__text">Остались вопросы?</p>
+        <p class="contacts__general contacts__text">Свяжитесь с нами!</p>
+        <h4 class="contacts__general contacts__title">Звоните:</h4>
+        <a class="contacts__general contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <h4 class="contacts__general contacts__title">Пишите:</h4>
+        <a class="contacts__general contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <h4 class="contacts__general contacts__title">Приезжайте в гости:</h4>
+        <p class="contacts__general contacts__text">ул. Большая Конюшенная, 19/8</p>
+        <a href="" class="contacts__link-map">
+          <img src="https://via.placeholder.com/320x200" width="320" height="200"
+            alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19">
+        </a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img src="https://via.placeholder.com/74x23" alt="Логотип сайта Pink">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
     </a>
     <ul class="socials">
       <li class="socials__item">
