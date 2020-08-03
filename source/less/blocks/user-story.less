@@ -14,11 +14,91 @@
   }
 }
 
-.user-story__link {
-  display: flex;
-}
-
 .user-story__wrap {
   background-color: @very-light-gray;
   padding: 8px 17px;
+}
+
+.user-story__link {
+  display: flex;
+  width: 100%;
+  min-height: 137px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 300px;
+  }
+}
+
+.user-story__link-1 {
+  background-image: url("../img/panorama-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    min-height: 509px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+  }
+}
+
+.user-story__link-2 {
+  background-image: url("../img/photo-car-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-car-tablet@1x.jpg");
+  }
+}
+
+.user-story__link-3 {
+  background-image: url("../img/photo-drumset-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-drumset-tablet@1x.jpg");
+  }
+}
+
+.user-story__link-4 {
+  background-image: url("../img/photo-window-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-window-tablet@1x.jpg");
+  }
+}
+
+.user-story__link-5 {
+  background-image: url("../img/photo-fair-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-fair-tablet@1x.jpg");
+  }
+}
+
+.user-story__link-6 {
+  background-image: url("../img/photo-pov-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-pov-tablet@1x.jpg");
+  }
+}
+
+.user-story__link-7 {
+  background-image: url("../img/photo-wing-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-wing-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-story__wrap-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-story__wrap-article {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

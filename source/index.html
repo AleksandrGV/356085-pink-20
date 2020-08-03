@@ -13,10 +13,10 @@
 
 <body class="page__body">
   <!--Элеменнт блока двойное подчеркивание-->
-  <header class="page-header">
+  <header class="page-header page-header--active">
     <div class="page-header__wrap">
       <a class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+        <!-- <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink"> -->
       </a>
       <nav class="navigation">
         <button type="button" class="navigation__toggle">
@@ -34,7 +34,7 @@
           </li>
           <li class="navigation__item">
             <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-              target="_blank">htmlacademy</a>
+              target="_blank">HTMLAcademy</a>
           </li>
         </ul>
       </nav>
@@ -42,12 +42,11 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение Pink раскрасит Ваши серые будни в розовые цвета</h1>
-    <section class="hero">
+    <section class="hero hero-home">
       <h2 class="visually-hidden">Здесь вы может загрузить приложение Pink</h2>
       <div class="hero__wrap hero__wrap--index">
-        <p class="hero__text">Взгляните на жизнь иначе!</p>
-        <img class="hero__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
-          alt="Изображение преобразованного вида">
+        <p class="hero__text hero-home__text">Взгляните на жизнь иначе!</p>
+        <div class="hero__img"></div>
       </div>
     </section>
     <section class="download-application">
@@ -70,34 +69,51 @@
           </a>
         </li>
       </ul>
-      <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+      <small class="download-application__small">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
+        8</small>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения Pink</h2>
       <header class="advantages__header">
         <p class="advantages__header-text">Устали от серости мегаполиса?</p>
-        <p class="advantages__header-text">Нам есть, что вам предложить!</p>
+        <p class="advantages__header-text">Нам есть, что вам <br> предложить!</p>
       </header>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </li>
-      </ul>
-      <footer class="advantages__footer">
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Пример изображения">
-      </footer>
+      <div class="advantages__wrap-list">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img-1"></div>
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько
+              кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img-2"></div>
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img-3"></div>
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <footer class="advantages__footer">
+        </footer>
+      </div>
+    </section>
+    <section class="effect">
+      <div class="effect__left">
+      </div>
+      <div class="effect__right">
+        <h4 class="effect__title">Эффект<br> на 24 часа!</h4>
+        <p class="effect__text">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится<br> целые сутки!</p>
+        <a class="effect__link" href="#!">Узнать больше об исследовании</a>
+      </div>
     </section>
     <section class="comments">
       <h4 class="visually-hidden">Комментарии</h4>

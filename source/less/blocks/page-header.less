@@ -1,9 +1,10 @@
 // Шапка сайта
 
 .page-header {
-  background-color: rgba(@black, 30%);
+  background-color: @dark-blue;
+  // background-color: rgba(@black, 30%);
   color: @white;
-  position: absolute;
+  position: relative;
   min-width: 100%;
   min-height: 66px;
   z-index: 5;
@@ -11,7 +12,37 @@
 
 .page-header__wrap {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 17px 20px;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  padding: 23px 15px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  width: 74px;
+  height: 23px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: none;
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/logo-pink-white-desktop.svg");
+    width: 147px;
+    height: 40px;
+  }
 }
