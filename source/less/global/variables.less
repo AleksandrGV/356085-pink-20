@@ -13,6 +13,20 @@
 
 // Vievport
 
-@mobile-width: 659px;
-@tablet-width: 660px;
-@desktop-width: 960px;
+.mobile(@content) {
+  @media (max-width: 659px) {
+    @content();
+  }
+}
+
+.tablet(@content) {
+  @media (min-width: 660px) {
+    @content();
+  }
+}
+
+.desktop(@content) {
+  @media (min-width: 960px) {
+    @content();
+  }
+}
