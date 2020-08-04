@@ -6,54 +6,54 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .effect {
+.effect {
+  @media (min-width: @tablet-width) {
     display: flex;
     padding: 20px;
-
-    @media (min-width: @desktop-width) {
-      padding: 20px;
-      background-color: @very-light-gray;
-    }
   }
-
-  .effect__left {
-    width: 100%;
-    min-height: 276px;
-    background-image: url("../img/timer.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    margin-right: 10%;
-    padding: 5px 15px;
-
-    @media (min-width: @desktop-width) {
-      width: 40%;
-      background-size: 100%;
-    }
-  }
-
-  .effect__title {
-    font-size: 30px;
-  }
-
-  .effect__text {
-    line-height: 1.5;
-
-    @media (min-width: @desktop-width) {
-      width: 100%;
-      font-size: 18px;
-    }
-  }
-
-  .effect__link {
-    color: @crimson;
-
-    @media (min-width: @desktop-width) {
-      font-size: 18px;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 20px;
+    background-color: @very-light-gray;
   }
 }
+
+.effect__left {
+  width: 100%;
+  min-height: 276px;
+  background-image: url("../img/timer.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  margin-right: 10%;
+  padding: 5px 15px;
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    background-size: 100%;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+}
+
+.effect__text {
+  line-height: 1.5;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.effect__link {
+  color: @crimson;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .effect__right {
