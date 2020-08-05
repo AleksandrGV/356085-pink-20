@@ -4,19 +4,20 @@
   background-color: @dark-blue-blue;
   padding: 20px;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     position: relative;
-    bottom: 12%;
+    bottom: 8%;
     background: none;
     width: 37%;
     margin-left: 5%;
     padding-bottom: 0;
-  }
+    margin-bottom: -70px;
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     width: 30%;
     margin-left: 8%;
-  }
+  });
 }
 
 .download-application__link {
@@ -31,10 +32,10 @@
   display: block;
   text-align: center;
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     font-size: 21px;
     padding: 20px 10px;
-  }
+  });
 }
 
 .download-application__list {

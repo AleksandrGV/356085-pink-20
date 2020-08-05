@@ -1,0 +1,12 @@
+// Обертка для галереи историй пользователей
+
+.user-story-container {
+  .tablet ({
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    });
+  .desktop ({
+      grid-template-columns: 1fr 1fr 1fr;
+    });
+}

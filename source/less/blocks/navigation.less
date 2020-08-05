@@ -12,6 +12,11 @@
   position: relative;
   width: 100%;
   border-top: 1px solid @black;
+
+  .desktop ({
+    flex-direction: row;
+    border: none
+  });
 }
 
 .navigation__link {
@@ -28,12 +33,12 @@
   border-top: 1px solid rgba(@white, 0.15);
   position: relative;
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     border: none;
     text-transform: capitalize;
     font-weight: normal;
     line-height: 1;
-  }
+  });
 }
 
 .navigation__toggle {
@@ -41,14 +46,7 @@
   right: 20px;
   top: 30px;
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .navigation__list {
-    display: flex;
-    flex-direction: row;
-  }
+  });
 }

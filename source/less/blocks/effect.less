@@ -1,37 +1,48 @@
 //Блок эффект на  24 часа
 
-@media (max-width: @mobile-width) {
-  .effect {
-    display: none;
-  }
-}
-
 .effect {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    padding: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    min-width: 238px;
+    min-height: 276px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  @media (min-width: @desktop-width) {
-    padding: 20px;
+  .mobile ({
+    display: none;
+  });
+
+  .tablet ({
+    display: flex;
+    justify-content: flex-end;
+    padding: 55px 20px;
+  });
+
+  .desktop ({
+    padding: 40px 60px;
     background-color: @very-light-gray;
-  }
+
+    &::before {
+      width: 298px;
+      height: 345px;
+    }
+  });
 }
 
-.effect__left {
-  width: 100%;
-  min-height: 276px;
-  background-image: url("../img/timer.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  margin-right: 10%;
-  padding: 5px 15px;
+.effect__wrap {
+  width: 50%;
 
-  @media (min-width: @desktop-width) {
-    width: 40%;
-    background-size: 100%;
-  }
+  .desktop ({
+    margin: 60px;
+  });
 }
 
 .effect__title {
@@ -41,24 +52,16 @@
 .effect__text {
   line-height: 1.5;
 
-  @media (min-width: @desktop-width) {
-    width: 100%;
+  .desktop ({
     font-size: 18px;
-  }
+    margin-bottom: 47px;
+  });
 }
 
 .effect__link {
   color: @crimson;
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     font-size: 18px;
-  }
-}
-
-
-@media (min-width: @desktop-width) {
-  .effect__right {
-    width: 60%;
-    margin-right: 50px;
-  }
+  });
 }

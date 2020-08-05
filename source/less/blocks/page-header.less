@@ -14,35 +14,26 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     flex-direction: row;
     justify-content: space-around;
-  }
+  });
 }
 
 .page-header__logo {
   display: block;
   padding: 23px 15px;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center left;
   width: 74px;
   height: 23px;
   margin-left: 20px;
 
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/logo-pink-white-tablet.svg");
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    border: none;
+  .tablet ({
     width: 145px;
     height: 40px;
-  }
+  });
 
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/logo-pink-white-desktop.svg");
+  .desktop ({
     width: 147px;
     height: 40px;
-  }
+  });
 }
