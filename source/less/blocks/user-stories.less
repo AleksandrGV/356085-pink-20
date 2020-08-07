@@ -1,0 +1,37 @@
+// Блок галерея
+
+.user-stories {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-stories__header {
+  padding: 100px 51px;
+}
+
+.user-stories__header-text {
+  text-align: center;
+  line-height: 1.4;
+
+  .tablet ({
+    font-size: 18px;
+    line-height: 1.3;
+  });
+}
+
+.user-stories__list {
+  .list-reset();
+  .tablet ({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  });
+  .desktop ({
+    grid-template-columns: 1fr 1fr 1fr;
+  });
+}
+
+.user-stories__item {
+  display: flex;
+  flex-direction: column;
+}
