@@ -1,0 +1,67 @@
+//Блок эффект на  24 часа
+
+.effect {
+  position: relative;
+
+  &::before {
+    content: "";
+    min-width: 238px;
+    min-height: 276px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .mobile-only ({
+    display: none;
+  });
+
+  .tablet ({
+    display: flex;
+    justify-content: flex-end;
+    padding: 55px 20px;
+  });
+
+  .desktop ({
+    padding: 40px 60px;
+    background-color: @very-light-gray;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+    }
+  });
+}
+
+.effect__wrap {
+  width: 50%;
+
+  .desktop ({
+    margin: 60px;
+  });
+}
+
+.effect__title {
+  font-size: 30px;
+}
+
+.effect__text {
+  line-height: 1.5;
+
+  .desktop ({
+    font-size: 18px;
+    margin-bottom: 47px;
+  });
+}
+
+.effect__link {
+  color: @crimson;
+
+  .desktop ({
+    font-size: 18px;
+  });
+}

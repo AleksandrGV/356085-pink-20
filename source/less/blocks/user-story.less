@@ -3,22 +3,30 @@
 .user-story {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 20px;
-
-  &--best-panorama {
-    margin: 0;
-  }
 
   &--best-panorama .user-story__wrap {
     margin: 0 20px 20px;
   }
 }
 
-.user-story__link {
-  display: flex;
-}
-
 .user-story__wrap {
   background-color: @very-light-gray;
   padding: 8px 17px;
+}
+
+.user-story__link {
+  display: flex;
+  width: 100%;
+  min-height: 137px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .tablet ({
+    min-height: 300px;
+  });
+}
+
+.user-story__link-img {
+  width: 100%;
 }

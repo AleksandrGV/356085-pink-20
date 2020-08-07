@@ -1,9 +1,10 @@
 // Шапка сайта
 
 .page-header {
-  background-color: rgba(@black, 30%);
+  background-color: @dark-blue;
+  // background-color: rgba(@black, 30%);
   color: @white;
-  position: absolute;
+  position: relative;
   min-width: 100%;
   min-height: 66px;
   z-index: 5;
@@ -11,7 +12,28 @@
 
 .page-header__wrap {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 17px 20px;
+  flex-direction: column;
+
+  .desktop ({
+    flex-direction: row;
+    justify-content: space-around;
+  });
+}
+
+.page-header__logo {
+  display: block;
+  padding: 23px 15px;
+  width: 74px;
+  height: 23px;
+  margin-left: 20px;
+
+  .tablet ({
+    width: 145px;
+    height: 40px;
+  });
+
+  .desktop ({
+    width: 147px;
+    height: 40px;
+  });
 }

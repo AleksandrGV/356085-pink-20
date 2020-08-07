@@ -34,7 +34,7 @@
           </li>
           <li class="navigation__item">
             <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-              target="_blank">htmlacademy</a>
+              target="_blank">HTMLAcademy</a>
           </li>
         </ul>
       </nav>
@@ -47,121 +47,143 @@
         <p class="hero__text">Фотографии пользователей</p>
       </div>
     </section>
-    <section class="gallery">
+    <section class="user-stories">
       <h3 class="visually-hidden">Фотографии пользователей</h3>
-      <header class="gallery__header">
-        <p class="gallery__header-text">Взгляните на фотографии, которые выкладывают пользователи!
+      <header class="user-stories__header">
+        <p class="user-stories__header-text">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</p>
       </header>
-      <article class="user-story user-story--best-panorama">
-        <a class="user-story__link" href="#!">
-          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Переход через обрыв">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Анна</h4>
-            <time class="user-story__time" datetime="20h 05m">(5 минут назад)</time>
+      <div class="user-stories__main-story">Панорама дня</div>
+        <article class="user-story user-story--best-panorama">
+          <a class="user-story__link user-story__link--1" href="#!">
+            <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" width="320" height="137"
+              alt="Канатный мост через обрыв">
+          </a>
+          <div class="user-story__wrap">
+            <div class="user-story__title-time-wrap">
+              <h4 class="user-story__title">Анна</h4>
+              <time class="user-story__time" datetime="20h 05m">(5 минут назад)</time>
+            </div>
+            <p class="user-story__text">Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <button type="button" class="user-story__like">Нравится
+              <span class="user-story__counter js-like-counter">215</span>
+            </button>
           </div>
-          <p class="user-story__text">Прыгать или нет? Напишите в
-            комментарии свой совет и
-            смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
-          <button type="button" class="user-story__like">Нравится
-            <span class="user-story__counter js-like-counter">215</span>
-          </button>
-        </div>
-      </article>
-      <article class="user-story">
-        <a class="user-story__link" href="#!">
-          <img src="img/photo-car-mobile@1x.jpg" width="320" height="137" alt="Презентация автомобиля">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Левон</h4>
-            <time class="user-story__time" datetime="13h 05m">(5 часов назад)</time>
-          </div>
-          <p class="user-story__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button type="button" class="user-stoties__like">Нравится
-            <span class="user-story__counter js-like-counter">356</span>
-          </button>
-        </div>
-      </article>
-      <article class="user-story">
-        <a class="user-story__link" href="#!">
-          <img src="img/photo-drumset-mobile@1x.jpg" width="320" height="137" alt="Барабанная установка">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Антон</h4>
-            <time class="user-story__time" datetime="08h 05m">(12 часов назад)</time>
-          </div>
-          <p class="user-story__text">Соседи будут рады!</p>
-          <button type="button" class="user-story__like">Нравится
-            <span class="user-story__counter js-like-counter">666</span>
-          </button>
-        </div>
-      </article>
-      <article class="user-story">
-        <a class="user-story__link" href="#!">
-          <img src="img/photo-window-mobile@1x.jpg" width="320" height="137" alt="Панорамная крыша">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Борис</h4>
-            <time class="user-story__time" datetime="00h 05m">(20 часов назад)</time>
-          </div>
-          <p class="user-story__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button type="button" class="user-story__like">Нравится
-            <span class="user-story__counter js-like-counter">215</span>
-          </button>
-        </div>
-      </article>
-      <article class="user-story">
-        <a class="user-story__link" href="#!">
-          <img src="img/photo-fair-mobile@1x.jpg" width="320" height="137" alt="Кубанская бахча">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Сергей</h4>
-            <time class="user-story__time" datetime="1d 19h 05m">(25 часов назад)</time>
-          </div>
-          <p class="user-story__text">Самая кубанская в мире!</p>
-          <button type="button" class="user-story__like">Нравится
-            <span class="user-story__counter js-like-counter">4</span>
-          </button>
-        </div>
-      </article>
-      <article class="user-story">
-        <a class="user-story__link" href="#!">
-          <img src="img/photo-pov-mobile@1x.jpg" width="320" height="137" alt="Выше всех, над пропастью">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Максим</h4>
-            <time class="user-story__time" datetime="1d 04h 05m">(40 часов назад)</time>
-          </div>
-          <p class="user-story__text">Где снег-то?</p>
-          <button type="button" class="user-story__like">Нравится
-            <span class="user-story__counter js-like-counter">150</span>
-          </button>
-        </div>
-      </article>
-      <article class="user-story">
-        <a class="user-story__link" href="#!">
-          <img src="img/photo-wing-mobile@1x.jpg" width="320" height="137"
-            alt="Вид на землю через эллюминатор самолета">
-        </a>
-        <div class="user-story__wrap">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Надежда</h4>
-            <time class="user-story__time" datetime="2d 23h 05m">(45 часов назад)</time>
-          </div>
-          <p class="user-story__text">Самая кубанская в мире!</p>
-          <button type="button" class="user-story__like">Нравится
-            <span class="user-story__counter js-like-counter">2560</span>
-          </button>
-        </div>
-      </article>
+        </article>
+      <div class="container">
+        <ul class="user-stories__list">
+          <li class="user-stories__item">
+            <article class="user-story">
+              <a class="user-story__link user-story__link--2" href="#!">
+                <img class="user-story__link-img" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
+                  alt="Снимок автомобиля">
+              </a>
+              <div class="user-story__wrap">
+                <div class="user-story__title-time-wrap">
+                  <h4 class="user-story__title">Левон</h4>
+                  <time class="user-story__time" datetime="13h 05m">(5 часов назад)</time>
+                </div>
+                <p class="user-story__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button type="button" class="user-story__like">Нравится
+                  <span class="user-story__counter js-like-counter">356</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="user-stories__item">
+            <article class="user-story">
+              <a class="user-story__link user-story__link--3" href="#!">
+                <img class="user-story__link-img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
+                  alt="Барабанная установка">
+              </a>
+              <div class="user-story__wrap">
+                <div class="user-story__title-time-wrap">
+                  <h4 class="user-story__title">Антон</h4>
+                  <time class="user-story__time" datetime="08h 05m">(12 часов назад)</time>
+                </div>
+                <p class="user-story__text">Соседи будут рады!</p>
+                <button type="button" class="user-story__like">Нравится
+                  <span class="user-story__counter js-like-counter">666</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="user-stories__item">
+            <article class="user-story">
+              <a class="user-story__link user-story__link--4" href="#!">
+                <img class="user-story__link-img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна">
+              </a>
+              <div class="user-story__wrap">
+                <div class="user-story__title-time-wrap">
+                  <h4 class="user-story__title">Борис</h4>
+                  <time class="user-story__time" datetime="00h 05m">(20 часов назад)</time>
+                </div>
+                <p class="user-story__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button type="button" class="user-story__like">Нравится
+                  <span class="user-story__counter js-like-counter">215</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="user-stories__item">
+            <article class="user-story">
+              <a class="user-story__link user-story__link--5" href="#!">
+                <img class="user-story__link-img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
+                  alt="Кубанская бахча">
+              </a>
+              <div class="user-story__wrap">
+                <div class="user-story__title-time-wrap">
+                  <h4 class="user-story__title">Сергей</h4>
+                  <time class="user-story__time" datetime="1d 19h 05m">(25 часов назад)</time>
+                </div>
+                <p class="user-story__text">Самая кубанская в мире!</p>
+                <button type="button" class="user-story__like">Нравится
+                  <span class="user-story__counter js-like-counter">4</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="user-stories__item">
+            <article class="user-story">
+              <a class="user-story__link user-story__link--6" href="#!">
+                <img class="user-story__link-img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
+                  alt="Выше всех">
+              </a>
+              <div class="user-story__wrap">
+                <div class="user-story__title-time-wrap">
+                  <h4 class="user-story__title">Максим</h4>
+                  <time class="user-story__time" datetime="1d 04h 05m">(40 часов назад)</time>
+                </div>
+                <p class="user-story__text">Где снег-то?</p>
+                <button type="button" class="user-story__like">Нравится
+                  <span class="user-story__counter js-like-counter">150</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="user-stories__item">
+            <article class="user-story">
+              <a class="user-story__link user-story__link--7" href="#!">
+                <img class="user-story__link-img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
+                  alt="Закат с борта самолета">
+              </a>
+              <div class="user-story__wrap">
+                <div class="user-story__title-time-wrap">
+                  <h4 class="user-story__title">Надежда</h4>
+                  <time class="user-story__time" datetime="2d 23h 05m">(45 часов назад)</time>
+                </div>
+                <p class="user-story__text">Самая кубанская в мире!</p>
+                <button type="button" class="user-story__like">Нравится
+                  <span class="user-story__counter js-like-counter">2560</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Редактирование -->
     <section class="editing">

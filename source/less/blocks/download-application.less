@@ -3,6 +3,21 @@
 .download-application {
   background-color: @dark-blue-blue;
   padding: 20px;
+
+  .tablet ({
+    position: relative;
+    bottom: 8%;
+    background: none;
+    width: 37%;
+    margin-left: 5%;
+    padding-bottom: 0;
+    margin-bottom: -70px;
+  });
+
+  .desktop ({
+    width: 30%;
+    margin-left: 8%;
+  });
 }
 
 .download-application__link {
@@ -11,14 +26,28 @@
   line-height: 1;
   color: @white;
   text-decoration: none;
-  padding: 21px 39px;
+  padding: 21px 15px;
   border: 3px solid @white;
   border-radius: 29px;
   display: block;
   text-align: center;
+
+  .desktop ({
+    font-size: 21px;
+    padding: 20px 10px;
+  });
 }
 
 .download-application__list {
   .list-reset();
   display: flex;
+}
+
+.download-application__small {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: @white;
+  text-align: center;
 }

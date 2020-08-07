@@ -9,24 +9,130 @@
   padding: 30px;
   text-align: center;
   font-size: 24px;
+
+  .tablet ({
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
+    padding-top: 0;
+  });
+
+  .desktop ({
+    font-size: 50px;
+    line-height: 1.4;
+  });
+}
+
+.advantages__header-text {
+  .tablet ({
+    margin: 5px 0;
+  });
+}
+
+.advantages__wrap-list {
+  background-image: url("../img/bg-triangle-grey.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .advantages__list {
   .list-reset();
-  background-image: url("../img/bg-triangle-grey.svg");
-  background-position: 0 15%;
-  background-repeat: no-repeat;
-  padding: 50px 20px 20px;
+  padding: 50px 20px;
+  position: relative;
+
+  .tablet ({
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    padding: 50px 20px 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      min-height: 547px;
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+  });
+
+  .desktop ({
+    flex-direction: row;
+    align-items: baseline;
+
+    &::before {
+      display: none;
+    }
+  });
 }
+
+.advantages__item {
+  .tablet ({
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  });
+
+  .desktop ({
+    width: 30%;
+    align-items: center;
+    margin: 0 10px;
+  });
+}
+
+.advantages__img {
+  display: none;
+
+  .desktop ({
+    display: block;
+  });
+}
+
 
 .advantages__title {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+
+  .tablet ({
+    text-align: left;
+  });
+
+  .desktop ({
+    padding: 0 10px;
+    text-align: center;
+    font-size: 30px;
+  });
 }
 
-.advantages__footer {
-  display: flex;
-  justify-content: center;
-  background-color: @very-light-gray;
+.advantages__text {
+  text-align: center;
+  line-height: 1.4;
+
+  .tablet ({
+    text-align: left;
+  });
+
+  .desktop ({
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 18px;
+  });
+}
+
+.advantages__mobile-img {
+  text-align: center;
+
+  .tablet ({
+    display: none;
+  });
+
+  .desktop ({
+    display: none;
+  });
 }
