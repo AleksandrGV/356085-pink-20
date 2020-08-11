@@ -54,25 +54,25 @@
           Видите, как не хватает ваших?</p>
       </header>
       <div class="user-stories__main-story">Панорама дня</div>
-        <article class="user-story user-story--best-panorama">
-          <a class="user-story__link user-story__link--1" href="#!">
-            <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" width="320" height="137"
-              alt="Канатный мост через обрыв">
-          </a>
-          <div class="user-story__wrap">
-            <div class="user-story__title-time-wrap">
-              <h4 class="user-story__title">Анна</h4>
-              <time class="user-story__time" datetime="20h 05m">(5 минут назад)</time>
-            </div>
-            <p class="user-story__text">Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!</p>
-            <button type="button" class="user-story__like">Нравится
-              <span class="user-story__counter js-like-counter">215</span>
-            </button>
+      <article class="user-story user-story--best-panorama">
+        <a class="user-story__link user-story__link--1" href="#!">
+          <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" width="320" height="137"
+            alt="Канатный мост через обрыв">
+        </a>
+        <div class="user-story__wrap">
+          <div class="user-story__title-time-wrap">
+            <h4 class="user-story__title">Анна</h4>
+            <time class="user-story__time" datetime="20h 05m">(5 минут назад)</time>
           </div>
-        </article>
+          <p class="user-story__text">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <button type="button" class="user-story__like">Нравится
+            <span class="user-story__counter js-like-counter">215</span>
+          </button>
+        </div>
+      </article>
       <div class="container">
         <ul class="user-stories__list">
           <li class="user-stories__item">
@@ -114,7 +114,8 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--4" href="#!">
-                <img class="user-story__link-img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна">
+                <img class="user-story__link-img" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
+                  alt="Окна">
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -185,53 +186,61 @@
         </ul>
       </div>
     </section>
-    <!-- Редактирование -->
+    <!-- Редактирование фотографий -->
     <section class="editing">
       <h4 class="visually-hidden">Редактирование фотографий</h4>
-      <p class="editing__text">Затмите их всех!
-        Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="editing__text-wrap">
+        <p class="editing__text">Затмите их всех!</p>
+        <p class="editing__text">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
       <article class="editing__article">
         <a href="#!" class="editing__link">
-          <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение">
+          <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
+          <!-- <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
+          <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение">
         </a>
         <div class="editing__wrap-button">
-          <div class="editing__button-range-controls">
-            <button type="button" class="editing__button editing__button--crop">
-              <span class="visually-hidden">Обрезать</span>
-            </button>
-            <div class="editing__range-controls editing__range-controls--active">
-              <div class="editing__scale">
-                <div class="editing__bar"></div>
+          <div class="editing__button-range-controls-wrap">
+            <div class="editing__button-range-controls">
+              <button type="button" class="editing__button editing__button--crop">
+                <span class="visually-hidden">Обрезать</span>
+              </button>
+              <div class="editing__range-controls editing__range-controls--active">
+                <div class="editing__scale">
+                  <div class="editing__bar"></div>
+                </div>
+                <div class="editing__toggle"></div>
               </div>
-              <div class="editing__toggle"></div>
+            </div>
+            <div class="editing__button-range-controls">
+              <button type="button" class="editing__button editing__button--fill">
+                <span class="visually-hidden">Заливка</span>
+              </button>
+              <div class="editing__range-controls">
+                <div class="editing__scale">
+                  <div class="editing__bar"></div>
+                </div>
+                <div class="editing__toggle"></div>
+              </div>
+            </div>
+            <div class="editing__button-range-controls">
+              <button type="button" class="editing__button editing__button--contrast">
+                <span class="visually-hidden">Контраст</span>
+              </button>
+              <div class="editing__range-controls">
+                <div class="editing__scale">
+                  <div class="editing__bar"></div>
+                </div>
+                <div class="editing__toggle"></div>
+              </div>
             </div>
           </div>
-          <div class="editing__button-range-controls">
-            <button type="button" class="editing__button editing__button--fill">
-              <span class="visually-hidden">Заливка</span>
-            </button>
-            <div class="editing__range-controls">
-              <div class="editing__scale">
-                <div class="editing__bar"></div>
-              </div>
-              <div class="editing__toggle"></div>
-            </div>
-          </div>
-          <div class="editing__button-range-controls">
-            <button type="button" class="editing__button editing__button--contrast">
-              <span class="visually-hidden">Контраст</span>
-            </button>
-            <div class="editing__range-controls">
-              <div class="editing__scale">
-                <div class="editing__bar"></div>
-              </div>
-              <div class="editing__toggle"></div>
-            </div>
+          <div class="editing__button-bottom-wrap">
+            <button type="submit" class="editing__button-bottom editing__post">Запостить</button>
+            <button type="reset" class="editing__button-bottom editing__close">Отмена</button>
           </div>
         </div>
       </article>
-      <button type="submit" class="editing__button-bottom editing__post">Запостить</button>
-      <button type="reset" class="editing__button-bottom editing__close">Отмена</button>
     </section>
   </main>
   <footer class="page-footer">

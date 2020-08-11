@@ -126,81 +126,173 @@
       <div class="comments__wrap slider">
         <div class="comments__list slider__list">
           <blockquote class="comments__item slider__item slider__item--active">
-            <cite class="comments__title">Николай Петров</cite>
-            <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <div class="comments__item-wrap">
+              <div class="comments__user-wrap">
+                <cite class="comments__title">Николай Петров</cite>
+                <div class="comments__wrap-span">
+                  <span class="comments__age">25 лет,</span>
+                  <span class="comments__profession">водитель трамвая</span>
+                </div>
+              </div>
+              <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
           </blockquote>
           <blockquote class="comments__item slider__item">
-            <cite class="comments__title">Николай Петров</cite>
-            <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <div class="comments__item-wrap">
+              <div class="comments__user-wrap">
+                <cite class="comments__title">Николай Петров</cite>
+                <div class="comments__wrap-span">
+                  <span class="comments__age">25 лет,</span>
+                  <span class="comments__profession">водитель трамвая</span>
+                </div>
+              </div>
+              <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
           </blockquote>
           <blockquote class="comments__item slider__item">
-            <cite class="comments__title">Николай Петров</cite>
-            <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <div class="comments__item-wrap">
+              <div class="comments__user-wrap">
+                <cite class="comments__title">Николай Петров</cite>
+                <div class="comments__wrap-span">
+                  <span class="comments__age">25 лет,</span>
+                  <span class="comments__profession">водитель трамвая</span>
+                </div>
+              </div>
+              <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
           </blockquote>
         </div>
         <!-- Круги переключения слайдера -->
         <ul class="slider__dots">
           <li class="slider__dots-item slider__dots-item--active">
-            <button type="button" class="slider__control">
+            <button type="button" class="slider__button slider__1">
               <span class="visually-hidden">Первый слайд</span>
             </button>
           </li>
           <li class="slider__dots-item">
-            <button type="button" class="slider__control">
+            <button type="button" class="slider__button slider__2">
               <span class="visually-hidden">Второй слайд</span>
             </button>
           </li>
           <li class="slider__dots-item">
-            <button type="button" class="slider__control">
+            <button type="button" class="slider__button slider__3">
               <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </li>
+        </ul>
+        <!-- Стрелки переключения слайдера -->
+        <ul class="slider__control">
+          <li class="slider__control-item">
+            <button class="slider__left">
+              <span class="visually-hidden">Левая стрелка</span>
+            </button>
+          </li>
+          <li class="slider__control-item">
+            <button class="slider__right">
+              <span class="visually-hidden">Правая стрелка</span>
             </button>
           </li>
         </ul>
       </div>
     </section>
     <section class="rates">
+      <!--С планшетной версии-->
+      <div class="rates__wrap-table">
+        <table class="rates__table">
+          <caption class="visually-hidden">Тарифные планы</caption>
+          <tr class="rates__header">
+            <th class="rates__empty-cell">&nbsp;</th>
+            <th class="rates__title rates__title--cell">База
+              <span class="rates__price">1,99 USD</span>
+            </th>
+            <th class="rates__title rates__title--cell">Стандарт
+              <span class="rates__price">3,99 USD</span>
+            </th>
+            <th class="rates__title rates__title--cell">Анлим
+              <span class="rates__price">9,99 USD</span>
+            </th>
+          </tr>
+          <tr class="rates__line-wrap">
+            <td class="rates__cell">Розовый фильтр</td>
+            <td class="rates__cell"></td>
+            <td class="rates__cell"></td>
+            <td class="rates__cell"></td>
+          </tr>
+          <tr class="rates__line-wrap">
+            <td class="rates__cell">Смайлики</td>
+            <td class="rates__cell"></td>
+            <td class="rates__cell"></td>
+            <td class="rates__cell"></td>
+          </tr>
+          <tr class="rates__line-wrap">
+            <td class="rates__cell">Комментарии</td>
+            <td class="rates__cell"></td>
+            <td class="rates__cell"></td>
+            <td class="rates__cell"></td>
+          </tr>
+        </table>
+      </div>
+      <!--Мобильная версия-->
       <h3 class="visually-hidden">Тарифы</h3>
       <div class="rates__wrap slider">
         <ul class="rates__list slider__list">
           <li class="rates__item slider__item">
-            <h3 class="rates__title">База</h3>
-            <span class="rates__price">1,99 USD</span>
-            <p class="rates__text">Розовый фильтр</p>
-            <p class="rates__text">Смайлики</p>
-            <p class="rates__text">Комментарии</p>
+            <article class="rates__article">
+              <div class="rates__header rates__header--mobile">
+                <h3 class="rates__title">База</h3>
+                <span class="rates__price">1,99 USD</span>
+              </div>
+              <div class="rates__text-wrap">
+                <p class="rates__text">Розовый фильтр</p>
+                <p class="rates__text">Смайлики</p>
+                <p class="rates__text">Комментарии</p>
+              </div>
+            </article>
           </li>
           <li class="rates__item hit slider__item slider__item--active">
-            <h3 class="rates__title">Стандарт</h3>
-            <span class="rates__price">3,99 USD</span>
-            <p class="rates__text">Розовый фильтр</p>
-            <p class="rates__text">Смайлики</p>
-            <p class="rates__text">Комментарии</p>
+            <article class="rates__article">
+              <div class="rates__header rates__header--mobile">
+                <h3 class="rates__title">Стандарт</h3>
+                <span class="rates__price">3,99 USD</span>
+              </div>
+              <div class="rates__text-wrap">
+                <p class="rates__text">Розовый фильтр</p>
+                <p class="rates__text">Смайлики</p>
+                <p class="rates__text">Комментарии</p>
+              </div>
+            </article>
           </li>
           <li class="rates__item slider__item">
-            <h3 class="rates__title">Анлим</h3>
-            <span class="rates__price">9,99 USD</span>
-            <p class="rates__text">Розовый фильтр</p>
-            <p class="rates__text">Смайлики</p>
-            <p class="rates__text">Комментарии</p>
+            <article class="rates__article">
+              <div class="rates__header rates__header--mobile">
+                <h3 class="rates__title">Анлим</h3>
+                <span class="rates__price">9,99 USD</span>
+              </div>
+              <div class="rates__text-wrap">
+                <p class="rates__text">Розовый фильтр</p>
+                <p class="rates__text">Смайлики</p>
+                <p class="rates__text">Комментарии</p>
+              </div>
+            </article>
           </li>
         </ul>
         <!-- Круги переключения слайдера -->
         <ul class="slider__dots">
           <li class="slider__dots-item slider__dots-item--active">
-            <button type="button" class="slider__control">
+            <button type="button" class="slider__button slider__1">
               <span class="visually-hidden">Первый слайд</span>
             </button>
           </li>
           <li class="slider__dots-item">
-            <button type="button" class="slider__control">
+            <button type="button" class="slider__button slider__1">
               <span class="visually-hidden">Второй слайд</span>
             </button>
           </li>
           <li class="slider__dots-item">
-            <button type="button" class="slider__control">
+            <button type="button" class="slider__button slider__1">
               <span class="visually-hidden">Третий слайд</span>
             </button>
           </li>
@@ -209,18 +301,28 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrap">
-        <div class="contacts__wrap-content">
-          <p class="contacts__general contacts__text">Остались вопросы?</p>
-          <p class="contacts__general contacts__text">Свяжитесь с нами!</p>
-          <h4 class="contacts__general contacts__title">Звоните:</h4>
-          <a class="contacts__general contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          <h4 class="contacts__general contacts__title">Пишите:</h4>
-          <a class="contacts__general contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <h4 class="contacts__general contacts__title">Приезжайте в гости:</h4>
-          <p class="contacts__general contacts__text">ул. Большая Конюшенная, 19/8</p>
-        </div>
+        <p class="contacts__general contacts__text">Остались вопросы?</p>
+        <p class="contacts__general contacts__text">Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__call">
+            <h4 class="contacts__general contacts__title">Звоните:</h4>
+            <a class="contacts__general contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item contacts__write">
+            <h4 class="contacts__general contacts__title">Пишите:</h4>
+            <a class="contacts__general contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item contacts__come">
+            <h4 class="contacts__general contacts__title">Приезжайте в гости:</h4>
+            <p class="contacts__general contacts__address">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
         <a href="img/bg-map-mobile@1x.png" class="contacts__link-map">
-          <img src="img/bg-map-mobile@1x.png" class="contacts__img-map" width="320" height="200"
+          <!-- <img src="img/bg-map-mobile@1x.png" class="contacts__img-map" width="320" height="200"
+            alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19"> -->
+          <!-- <img src="img/bg-map-tablet@1x.jpg" class="contacts__img-map" width="660" height="374"
+            alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19"> -->
+          <img src="img/bg-map-desktop@1x.jpg" class="contacts__img-map" width="1200" height="502"
             alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19">
         </a>
       </div>

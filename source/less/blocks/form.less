@@ -1,17 +1,206 @@
 // Форма сайта
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .tablet ({
+    padding: 0 20px;
+  });
+
+  .desktop ({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content min-content min-content min-content;
+    align-items: center;
+    gap: 30px;
+  });
+}
+
+.form__user-wrap {
+  width: 90%;
+
+  .tablet ({
+    width: 100%;
+  });
+
+  &--content-information {
+    .desktop ({
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    });
+  }
+
+  &--message {
+    .desktop ({
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    });
+  }
+}
+
 .form__list {
   .list-reset();
   margin-bottom: 20px;
+
+  &--content-information {
+    .desktop ({
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+      margin: 0 30px;
+    });
+  }
+
+  &--checkbox {
+    .desktop ({
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    });
+  }
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .tablet ({
+    flex-direction: row;
+    align-items: baseline;
+    margin: 40px 0;
+
+    &--tel-email {
+      flex-direction: column-reverse;
+    }
+  });
+
+  .desktop ({
+    margin: 30px 0 39px;
+  });
+}
+
+.form__item-checkbox,
+.form__item-radio {
+  margin-bottom: 50px;
+}
+
+.form__item-checkbox {
+  .desktop ({
+    margin: auto 10px;
+    padding: 20px 10px 20px 50px;
+  });
 }
 
 .form__fieldset-wrap {
   background-color: @very-light-gray;
-  padding: 20px 0;
+  padding: 20px 22px;
   margin-bottom: 20px;
+
+  .tablet ({
+    width: 100%;
+    background: none;
+  });
+
+  &--radio {
+    .desktop ({
+      height: 297px;
+      margin: auto;
+      padding: 0;
+    });
+  }
+
+  &--checkbox {
+    .desktop ({
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      padding: 20px 0;
+    });
+  }
 }
 
 .form__fieldset {
   margin: 0;
   border: none;
+
+  .tablet ({
+    border: 2px solid @light-gray;
+    border-radius: 1px;
+  });
+}
+
+.form__label {
+  margin: 0 10px 10px;
+  color: @crimson;
+  text-transform: uppercase;
+}
+
+.form__input {
+  padding: 20px 10px;
+  border: 2px solid @light-gray;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: justify;
+  box-sizing: border-box;
+
+  &--tel-email {
+    margin-bottom: 20px;
+  }
+
+  .tablet ({
+    width: 100%;
+  });
+}
+
+.form__input--message {
+  resize: none;
+
+  .tablet ({
+    width: 79%;
+    margin: auto;
+  });
+
+  .desktop ({
+    width: 85%;
+  });
+}
+
+.form__legend {
+  text-align: center;
+  color: @crimson;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-bottom: 40px;
+
+  &--tel-email {
+    display: none;
+
+    .tablet ({
+      display: block;
+    });
+  }
+
+
+  &--message {
+    margin-bottom: 10px;
+  }
+}
+
+.form__button-small {
+  .desktop ({
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  });
 }

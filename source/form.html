@@ -51,13 +51,13 @@
     </section>
     <section class="page-form">
       <div class="page-form__wrap">
-        <h2>Форма сайта</h2>
+        <h2 class="visually-hidden">Форма сайта</h2>
         <p class="page-form__header-text">Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="page-form__wrap">
+        <div class="form__user-wrap">
           <!-- Поля ввода 1 часть -->
           <ul class="form__list">
             <li class="form__item">
@@ -78,11 +78,11 @@
           </ul>
         </div>
         <!-- Чекбокс -->
-        <div class="form__fieldset-wrap">
+        <div class="form__fieldset-wrap form__fieldset-wrap--checkbox">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Ваши безбашенные
               достижения в путешествии</legend>
-            <div class="page-form__wrap">
+            <div class="form__user-wrap">
               <ul class="form__list form__list-checkbox">
                 <li class="form__item-checkbox">
                   <input type="checkbox" class="visually-hidden" id="field-checkbox-1" name="checkbox-first" checked>
@@ -113,21 +113,24 @@
           </fieldset>
         </div>
         <!-- Поля ввода 2 часть -->
-        <div class="page-form__wrap">
-          <ul class="form__list">
-            <li class="form__item">
-              <label for="field-phone" class="form__label">Номер телефона:</label>
-              <input type="tel" class="form__input" name="phone" id="field-phone" placeholder="Номер, пожалуйста">
-            </li>
-            <li class="form__item">
-              <label for="field-email" class="form__label">Адрес почты:</label>
-              <input type="email" class="form__input" name="email" id="field-email" placeholder="Введите почту *"
-                required>
-            </li>
-          </ul>
+        <div class="form__user-wrap form__user-wrap--content-information">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--tel-email">Контактная информация</legend>
+            <ul class="form__list form__list--content-information">
+              <li class="form__item form__item--tel-email">
+                <label for="field-phone" class="form__label">Номер телефона:</label>
+                <input type="tel" class="form__input form__input--tel-email" name="phone" id="field-phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="form__item form__item--tel-email">
+                <label for="field-email" class="form__label">Адрес почты:</label>
+                <input type="email" class="form__input form__input--tel-email" name="email" id="field-email" placeholder="Введите почту *"
+                  required>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <!-- Radio -->
-        <div class="form__fieldset-wrap">
+        <div class="form__fieldset-wrap form__fieldset-wrap--radio">
           <fieldset class="form__fieldset">
             <legend class="form__legend">С каким приложением
               путешествовали?</legend>
@@ -153,16 +156,17 @@
           </fieldset>
         </div>
         <!-- Сообщение -->
-        <div class="page-form__wrap">
-          <ul class="form__list form__list-radio">
-            <li class="form__item-radio">
-              <label for="field-message-user">Опишите свои эмоции</label>
-              <textarea class="form__input" id="field-message-user" cols="25" rows="6" placeholder="Можно прям в красках, не
-                стесняясь в выражениях"></textarea>
-            </li>
-          </ul>
+        <div class="form__user-wrap form__user-wrap--message">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--message" for="field-message-user">Опишите свои эмоции</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <textarea class="form__input form__input--message" id="field-message-user" cols="25" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-        <div class="page-form__wrap">
+        <div class="form__button-small">
           <div class="form__wrap-button-send">
             <button type="submit" class="form__button-send">Отправить форму</button>
           </div>
