@@ -5,6 +5,7 @@
 
   &--active {
     display: block;
+    margin: auto;
   }
 }
 
@@ -13,4 +14,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .desktop ({
+    display: none;
+  });
+}
+
+.slider__control {
+  display: none;
+
+  .desktop ({
+    .list-reset();
+    display: block;
+  });
 }
