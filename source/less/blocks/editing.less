@@ -5,15 +5,13 @@
   flex-direction: column;
 
   .desktop ({
-    width: 940px;
-    padding: 30px 10px;
+    max-width: 940px;
     margin: auto;
   });
 }
 
 .editing__text-wrap {
   font-size: 14px;
-  line-height: 1.2;
   margin: 50px auto 70px;
   text-align: center;
 
@@ -25,14 +23,17 @@
 
 .editing__text {
   margin: 0;
+  line-height: 1.4;
 }
 
 .editing__article {
+  background-color: @very-light-gray;
+}
+
+.editing__article-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @very-light-gray;
-  padding: 20px;
 
   .tablet ({
     display: grid;

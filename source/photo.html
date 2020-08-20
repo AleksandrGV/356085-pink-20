@@ -44,15 +44,19 @@
     <section class="hero">
       <h1 class="visually-hidden">Посмотрите на мир по новому, через приложение Pink</h1>
       <div class="hero__wrap">
-        <p class="hero__text">Фотографии пользователей</p>
+        <div class="container">
+          <p class="hero__text">Фотографии пользователей</p>
+        </div>
       </div>
     </section>
     <section class="user-stories">
       <h3 class="visually-hidden">Фотографии пользователей</h3>
-      <header class="user-stories__header">
-        <p class="user-stories__header-text">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?</p>
-      </header>
+      <div class="container">
+        <header class="user-stories__header">
+          <p class="user-stories__header-text">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?</p>
+        </header>
+      </div>
       <div class="user-stories__main-story">Панорама дня</div>
       <article class="user-story user-story--best-panorama">
         <a class="user-story__link user-story__link--1" href="#!">
@@ -189,55 +193,61 @@
     <!-- Редактирование фотографий -->
     <section class="editing">
       <h4 class="visually-hidden">Редактирование фотографий</h4>
-      <div class="editing__text-wrap">
-        <p class="editing__text">Затмите их всех!</p>
-        <p class="editing__text">Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="container">
+        <div class="editing__text-wrap">
+          <p class="editing__text">Затмите их всех!</p>
+          <p class="editing__text">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
       </div>
       <article class="editing__article">
-        <a href="#!" class="editing__link">
-          <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
-          <!-- <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
-          <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение">
-        </a>
-        <div class="editing__wrap-button">
-          <div class="editing__button-range-controls-wrap">
-            <div class="editing__button-range-controls">
-              <button type="button" class="editing__button editing__button--crop">
-                <span class="visually-hidden">Обрезать</span>
-              </button>
-              <div class="editing__range-controls editing__range-controls--active">
-                <div class="editing__scale">
-                  <div class="editing__bar"></div>
+        <div class="container">
+          <div class="editing__article-wrap">
+            <a href="#!" class="editing__link">
+              <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
+              <!-- <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
+              <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение">
+            </a>
+            <div class="editing__wrap-button">
+              <div class="editing__button-range-controls-wrap">
+                <div class="editing__button-range-controls">
+                  <button type="button" class="editing__button editing__button--crop">
+                    <span class="visually-hidden">Обрезать</span>
+                  </button>
+                  <div class="editing__range-controls editing__range-controls--active">
+                    <div class="editing__scale">
+                      <div class="editing__bar"></div>
+                    </div>
+                    <div class="editing__toggle"></div>
+                  </div>
                 </div>
-                <div class="editing__toggle"></div>
+                <div class="editing__button-range-controls">
+                  <button type="button" class="editing__button editing__button--fill">
+                    <span class="visually-hidden">Заливка</span>
+                  </button>
+                  <div class="editing__range-controls">
+                    <div class="editing__scale">
+                      <div class="editing__bar"></div>
+                    </div>
+                    <div class="editing__toggle"></div>
+                  </div>
+                </div>
+                <div class="editing__button-range-controls">
+                  <button type="button" class="editing__button editing__button--contrast">
+                    <span class="visually-hidden">Контраст</span>
+                  </button>
+                  <div class="editing__range-controls">
+                    <div class="editing__scale">
+                      <div class="editing__bar"></div>
+                    </div>
+                    <div class="editing__toggle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="editing__button-bottom-wrap">
+                <button type="submit" class="editing__button-bottom editing__post">Запостить</button>
+                <button type="reset" class="editing__button-bottom editing__close">Отмена</button>
               </div>
             </div>
-            <div class="editing__button-range-controls">
-              <button type="button" class="editing__button editing__button--fill">
-                <span class="visually-hidden">Заливка</span>
-              </button>
-              <div class="editing__range-controls">
-                <div class="editing__scale">
-                  <div class="editing__bar"></div>
-                </div>
-                <div class="editing__toggle"></div>
-              </div>
-            </div>
-            <div class="editing__button-range-controls">
-              <button type="button" class="editing__button editing__button--contrast">
-                <span class="visually-hidden">Контраст</span>
-              </button>
-              <div class="editing__range-controls">
-                <div class="editing__scale">
-                  <div class="editing__bar"></div>
-                </div>
-                <div class="editing__toggle"></div>
-              </div>
-            </div>
-          </div>
-          <div class="editing__button-bottom-wrap">
-            <button type="submit" class="editing__button-bottom editing__post">Запостить</button>
-            <button type="reset" class="editing__button-bottom editing__close">Отмена</button>
           </div>
         </div>
       </article>
