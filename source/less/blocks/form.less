@@ -5,10 +5,6 @@
   flex-direction: column;
   align-items: center;
 
-  .tablet ({
-    padding: 0 20px;
-  });
-
   .desktop ({
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,11 +15,7 @@
 }
 
 .form__user-wrap {
-  width: 90%;
-
-  .tablet ({
-    width: 100%;
-  });
+  width: 100%;
 
   &--content-information {
     .desktop ({
@@ -77,11 +69,12 @@
 
     &--tel-email {
       flex-direction: column-reverse;
+      margin: 20px 40px;
     }
   });
 
   .desktop ({
-    margin: 30px 0 39px;
+    margin: 28px 0 0;
   });
 }
 
@@ -99,7 +92,7 @@
 
 .form__fieldset-wrap {
   background-color: @very-light-gray;
-  padding: 20px 22px;
+  padding: 20px 0;
   margin-bottom: 20px;
 
   .tablet ({
@@ -128,6 +121,7 @@
 
 .form__fieldset {
   margin: 0;
+  padding: 0;
   border: none;
 
   .tablet ({
@@ -195,9 +189,16 @@
 }
 
 .form__button-small {
-  .desktop ({
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .tablet ({
+    flex-direction: row;
     justify-content: space-between;
+  });
+
+  .desktop ({
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
