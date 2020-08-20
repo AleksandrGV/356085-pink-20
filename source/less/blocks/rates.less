@@ -1,70 +1,63 @@
 // Блок с тарифами
 
 .rates {
+  width: 100%;
+  min-height: 216px;
   display: flex;
   justify-content: center;
   background-image: url("../img/bg-triangle-grey.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 10px 20px;
-}
-
-.rates__wrap-table {
-  .mobile-only ({
-    display: none;
-  });
-
-  .tablet ({
-    display: block;
-    margin: 50px 0;
-    padding-top: 40px;
-  });
-
-  .desktop ({
-    padding-top: 60px;
-  });
-}
-
-.rates__table {
-  border-collapse: collapse;
-}
-
-.rates__cell {
-  width: 153px;
-  background-color: #ffffff;
-  border: 2px solid #f2f2f2;
-  padding: 20px 5px 20px 15px;
-
-  .desktop ({
-    width: 234px;
-    font-size: 18px;
-  });
+  padding: 50px 0 30px;
 }
 
 .rates__wrap {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin: 60px 0;
-
-  .tablet ({
-    display: none;
-  });
+  min-height: 300px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .rates__list {
   .list-reset();
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.rates__item {
+  width: 280px;
+  position: relative;
+
+  .tablet ({
+    width: 153px;
+    display: block;
+  });
+
+  .desktop ({
+    width: 234px;
+  });
+
+  &--tariff-name {
+    .mobile-only ({
+      display: none;
+    });
+  }
 }
 
 .rates__article {
   display: flex;
   flex-direction: column;
-  border: 2px solid @very-light-gray;
 }
 
 .rates__header {
   background-color: @dark-blue;
   color: @white;
   padding: 10px 20px 25px;
+  border: 1px solid @light-gray;
 
   &--mobile {
     display: flex;
@@ -75,7 +68,8 @@
 
 .rates__empty-cell {
   background-color: @very-light-gray;
-  border: 2px solid @very-light-gray;
+  border: none;
+  border-bottom: 1px solid @light-gray;
 }
 
 .rates__title {
@@ -83,12 +77,7 @@
   line-height: 1.4;
   text-transform: uppercase;
   margin-bottom: 5px;
-
-  &--cell {
-    width: 152px;
-    border: 2px solid @very-light-gray;
-    padding: 20px 10px;
-  }
+  text-align: center;
 
   .desktop ({
     font-size: 18px;
@@ -108,14 +97,27 @@
 
 .rates__text-wrap {
   background-color: @white;
-  margin-bottom: 40px;
 }
 
 .rates__text {
   color: @dark-blue;
   text-transform: uppercase;
-  border-top: 1px solid @very-light-gray;
-  border-bottom: 1px solid @very-light-gray;
-  padding: 15px 20px;
+  border: 1px solid @light-gray;
+  padding: 15px 10px;
   margin: 0;
+
+  .tablet ({
+    text-transform: capitalize;
+    padding: 7px 10px 8px;
+  });
+
+  .desktop ({
+    padding: 23px 22px;
+  });
+}
+
+.rates__hide {
+  .tablet ({
+    font-size: 0;
+  });
 }

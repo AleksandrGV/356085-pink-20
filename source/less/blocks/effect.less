@@ -1,6 +1,24 @@
 //Блок эффект на  24 часа
 
 .effect {
+  .mobile-only ({
+    display: none;
+  });
+
+  .tablet ({
+    display: flex;
+  });
+
+  .desktop ({
+    padding: 60px 0;
+    background-color: @very-light-gray;
+    margin-bottom: 40px;
+  });
+}
+
+.effect__wrap {
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   &::before {
@@ -16,20 +34,7 @@
     transform: translateY(-50%);
   }
 
-  .mobile-only ({
-    display: none;
-  });
-
-  .tablet ({
-    display: flex;
-    justify-content: flex-end;
-    padding: 55px 20px;
-  });
-
   .desktop ({
-    padding: 40px 60px;
-    background-color: @very-light-gray;
-
     &::before {
       width: 298px;
       height: 345px;
@@ -37,20 +42,27 @@
   });
 }
 
-.effect__wrap {
+.effect__inner-wrapper {
   width: 50%;
-
-  .desktop ({
-    margin: 60px;
-  });
+  margin-left: auto;
 }
 
 .effect__title {
   font-size: 30px;
+
+  .tablet ({
+    margin: 25px 0 10px;
+  });
+
+  .desktop ({
+    margin-bottom: 40px;
+  });
 }
 
 .effect__text {
   line-height: 1.5;
+  width: 96%;
+  margin-top: 0;
 
   .desktop ({
     font-size: 18px;
@@ -63,5 +75,11 @@
 
   .desktop ({
     font-size: 18px;
+  });
+}
+
+.effect__carryover {
+  .desktop ({
+    display: none;
   });
 }

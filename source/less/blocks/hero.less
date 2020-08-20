@@ -11,6 +11,7 @@
   color: @white;
   position: relative;
   text-align: center;
+  padding-top: 20px;
 
   .tablet ({
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -25,7 +26,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0;
 
   .desktop ({
     align-items: center;
@@ -36,10 +36,10 @@
   font-weight: 300;
   line-height: 1.4;
   font-size: 24px;
-  padding: 20px;
+  margin-top: 30px;
 
   .tablet ({
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.2;
     margin: 0 60px;
   });
@@ -53,14 +53,14 @@
 
 .hero__text--home {
   .tablet ({
+    width: 35%;
     position: absolute;
-    margin-left: 30px;
-    width: 32%;
+    top: 65px;
+    left: 0;
   });
 
   .desktop ({
-    width: 25%;
-    left: 0;
+    width: 30%;
   });
 }
 

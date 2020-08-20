@@ -3,11 +3,36 @@
 .advantages {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: @white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .tablet ({
+    padding-bottom: 40px;
+
+    &::after {
+      display: none;
+    }
+  });
+
+  .desktop ({
+    padding-bottom: 0;
+  });
 }
 
 .advantages__header {
-  padding: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 24px;
 
   .tablet ({
@@ -15,6 +40,7 @@
     font-size: 40px;
     line-height: 1;
     padding-top: 0;
+    margin-bottom: 40px;
   });
 
   .desktop ({
@@ -24,8 +50,19 @@
 }
 
 .advantages__header-text {
+  text-align: center;
+
   .tablet ({
     margin: 5px 0;
+  });
+}
+
+.advantages__header-text:last-child {
+  margin-bottom: -20px;
+
+  .tablet ({
+    width: 60%;
+    margin-bottom: 20px;
   });
 }
 
@@ -38,20 +75,20 @@
 
 .advantages__list {
   .list-reset();
-  padding: 50px 20px;
+  margin: 50px 0;
+  padding-top: 20px;
   position: relative;
 
   .tablet ({
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: auto;
-    padding: 50px 20px 25px;
+    margin: 20px 0 0 auto;
 
     &::before {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -20px;
       left: 0;
       width: 50%;
       min-height: 547px;

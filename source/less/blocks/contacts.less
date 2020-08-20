@@ -7,13 +7,12 @@
 .contacts__wrap {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   font-weight: 300;
   font-size: 24px;
 }
 
 .contacts__text {
+  text-align: center;
   margin: 0;
 
   .tablet ({
@@ -30,7 +29,6 @@
   .list-reset();
   display: flex;
   flex-direction: column;
-  z-index: 5;
 
   .tablet ({
     flex-direction: row;
@@ -48,6 +46,7 @@
 
 .contacts__item {
   margin: 0 20px;
+  z-index: 5;
 
   .tablet ({
     width: 40%;
