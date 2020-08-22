@@ -15,70 +15,75 @@
   <!--Элеменнт блока двойное подчеркивание-->
   <header class="page-header page-header--active">
     <div class="page-header__wrap">
-      <a class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
-      </a>
-      <nav class="navigation">
-        <button type="button" class="navigation__toggle">
-          <span class="visually-hidden">Развернуть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a class="link navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="link navigation__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="link navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-              target="_blank">HTMLAcademy</a>
-          </li>
-        </ul>
-      </nav>
+      <nav class="navigation navigation--open navigation--nojs">
+        <div class="navigation__wrap">
+            <a class="navigation__logo">
+              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+              <!-- <img src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+              <!-- <img src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+            </a>
+            <button type="button" class="navigation__toggle">
+              <span class="visually-hidden">Развернуть меню</span>
+            </button>
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--active">
+                <a class="link navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+                  target="_blank">HTMLAcademy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение Pink раскрасит Ваши серые будни в розовые цвета</h1>
     <section class="hero hero--home">
       <h2 class="visually-hidden">Здесь вы может загрузить приложение Pink</h2>
+      <div class="container">
       <div class="hero__wrap hero__wrap--index">
-        <div class="container">
           <p class="hero__text hero__text--home">Взгляните на жизнь иначе!</p>
-        </div>
-        <div class="hero__img">
-          <!-- <img src="img/iphone-hand-mobile@1x.png" width="286" height="286" alt="Город розового цвета"> -->
-          <!-- <img src="img/iphone-hand-tablet@1x.png" width="660" height="545" alt="Город розового цвета"> -->
-          <img src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="Город розового цвета">
+          <div class="hero__img">
+            <img src="img/iphone-hand-mobile@1x.png" width="286" height="286" alt="Город розового цвета">
+            <!-- <img src="img/iphone-hand-tablet@1x.png" width="660" height="545" alt="Город розового цвета"> -->
+            <!-- <img src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="Город розового цвета"> -->
+          </div>
         </div>
       </div>
     </section>
     <section class="download-application">
       <div class="container">
-        <a class="download-application__link" href="https://www.apple.com/ru/ios/app-store/" target="_blank">Скачать
-          приложение</a>
-        <ul class="download-application__list">
-          <li class="download-application__item">
-            <a class="download-application__link-icon" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
-              <span class="visually-hidden">Apple</span>
-            </a>
-          </li>
-          <li class="download-application__item">
-            <a class="download-application__link-icon" href="https://play.google.com/store/apps?hl=ru" target="_blank">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="download-application__item">
-            <a class="download-application__link-icon" href="https://www.microsoft.com/ru-ru/store/apps"
-              target="_blank">
-              <span class="visually-hidden">Microsoft</span>
-            </a>
-          </li>
-        </ul>
-        <small class="download-application__small">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
-          8</small>
+        <div class="download-application__wrap">
+          <a class="download-application__link" href="https://www.apple.com/ru/ios/app-store/" target="_blank">Скачать
+            приложение</a>
+          <ul class="download-application__list">
+            <li class="download-application__item">
+              <a class="download-application__link-icon" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
+                <span class="visually-hidden">Apple</span>
+              </a>
+            </li>
+            <li class="download-application__item">
+              <a class="download-application__link-icon" href="https://play.google.com/store/apps?hl=ru" target="_blank">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="download-application__item">
+              <a class="download-application__link-icon" href="https://www.microsoft.com/ru-ru/store/apps"
+                target="_blank">
+                <span class="visually-hidden">Microsoft</span>
+              </a>
+            </li>
+          </ul>
+          <small class="download-application__small">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+        </div>
       </div>
     </section>
     <section class="advantages">
@@ -367,6 +372,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

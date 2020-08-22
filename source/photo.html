@@ -15,28 +15,32 @@
   <!--Элеменнт блока страницы двойное подчеркивание-->
   <header class="page-header">
     <div class="page-header__wrap">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
-      </a>
-      <nav class="navigation">
-        <button type="button" class="navigation__toggle">
-          <span class="visually-hidden">Развернуть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="link navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item navigation__item--active">
-            <a class="link navigation__link">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="link navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-              target="_blank">HTMLAcademy</a>
-          </li>
-        </ul>
+      <nav class="navigation navigation--open navigation--nojs">
+        <div class="navigation__wrap">
+          <a class="navigation__logo" href="index.html">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+            <!-- <img src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+            <!-- <img src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+          </a>
+          <button type="button" class="navigation__toggle">
+            <span class="visually-hidden">Развернуть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="link navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a class="link navigation__link">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+                target="_blank">HTMLAcademy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -283,6 +287,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
