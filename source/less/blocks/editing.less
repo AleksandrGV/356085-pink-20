@@ -3,11 +3,11 @@
 .editing {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  .desktop ({
-    max-width: 940px;
-    margin: auto;
-  });
+  // .desktop ({
+  //   max-width: 940px;
+  // });
 }
 
 .editing__text-wrap {
@@ -28,12 +28,17 @@
 
 .editing__article {
   background-color: @very-light-gray;
+
+  .desktop ({
+    margin: 0 20px;
+  });
 }
 
 .editing__article-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 
   .tablet ({
     display: grid;
