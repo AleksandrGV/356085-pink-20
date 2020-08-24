@@ -3,18 +3,16 @@
 .editing {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  .desktop ({
-    width: 940px;
-    padding: 30px 10px;
-    margin: auto;
-  });
+  // .desktop ({
+  //   max-width: 940px;
+  // });
 }
 
 .editing__text-wrap {
   font-size: 14px;
-  line-height: 1.2;
-  margin: 50px auto 70px;
+  margin: 20px auto 70px;
   text-align: center;
 
   .tablet ({
@@ -25,13 +23,21 @@
 
 .editing__text {
   margin: 0;
+  line-height: 1.4;
 }
 
 .editing__article {
+  background-color: @very-light-gray;
+
+  .desktop ({
+    margin: 0 20px;
+  });
+}
+
+.editing__article-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @very-light-gray;
   padding: 20px;
 
   .tablet ({

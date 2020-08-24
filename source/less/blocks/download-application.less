@@ -2,21 +2,27 @@
 
 .download-application {
   background-color: @dark-blue-blue;
-  padding: 20px;
+  padding: 20px 0;
 
   .tablet ({
     position: relative;
-    bottom: 8%;
+    bottom: 325px;
     background: none;
-    width: 37%;
-    margin-left: 5%;
-    padding-bottom: 0;
-    margin-bottom: -70px;
+    margin-bottom: -100px;
   });
 
   .desktop ({
-    width: 30%;
-    margin-left: 8%;
+    bottom: 10%;
+  });
+}
+
+.download-application__wrap {
+  .tablet ({
+    width: 45%;
+  });
+
+  .desktop ({
+    width: 35%;
   });
 }
 

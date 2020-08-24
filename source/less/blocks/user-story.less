@@ -4,9 +4,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+
+  &--best-panorama {
+    margin-bottom: 0;
+  }
 
   &--best-panorama .user-story__wrap {
-    margin: 0 20px 20px;
+    margin: 0  0 20px 0;
   }
 }
 
@@ -18,6 +23,32 @@
   align-items: baseline;
   background-color: #f2f2f2;
   padding: 8px 17px 20px;
+
+  &--best-panorama {
+    .tablet ({
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    });
+  }
+}
+
+.user-story__title-time-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.user-story__title {
+  margin-right: 5px;
+}
+
+.user-story__text--best-panorama {
+  .tablet ({
+    order: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  });
 }
 
 .user-story__link {
@@ -35,4 +66,10 @@
 
 .user-story__link-img {
   width: 100%;
+}
+
+.user-story__like--best-panorama {
+  .tablet ({
+    justify-self: end;
+  });
 }
