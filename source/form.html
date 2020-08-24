@@ -17,12 +17,12 @@
     <div class="page-header__wrap">
       <nav class="navigation navigation--open navigation--nojs">
         <div class="navigation__wrap">
-            <a class="navigation__logo">
-              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
-            </a>
-            <button type="button" class="navigation__toggle">
-              <span class="visually-hidden">Развернуть меню</span>
-            </button>
+          <a class="navigation__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+          </a>
+          <button type="button" class="navigation__toggle">
+            <span class="visually-hidden">Развернуть меню</span>
+          </button>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="link navigation__link" href="index.html">Главная</a>
@@ -117,7 +117,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+          </div>
           </fieldset>
         </div>
         <!-- Поля ввода 2 часть -->
@@ -128,12 +128,13 @@
               <ul class="form__list form__list--content-information">
                 <li class="form__item form__item--tel-email">
                   <label for="field-phone" class="form__label">Номер телефона:</label>
-                  <input type="tel" class="form__input form__input--tel-email" name="phone" id="field-phone" placeholder="Номер, пожалуйста">
+                  <input type="tel" class="form__input form__input--tel-email" name="phone" id="field-phone"
+                    placeholder="Номер, пожалуйста">
                 </li>
                 <li class="form__item form__item--tel-email">
                   <label for="field-email" class="form__label">Адрес почты:</label>
-                  <input type="email" class="form__input form__input--tel-email" name="email" id="field-email" placeholder="Введите почту *"
-                    required>
+                  <input type="email" class="form__input form__input--tel-email" name="email" id="field-email"
+                    placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
@@ -174,7 +175,8 @@
               <legend class="form__legend form__legend--message" for="field-message-user">Опишите свои эмоции</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <textarea class="form__input form__input--message" id="field-message-user" cols="25" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                  <textarea class="form__input form__input--message" id="field-message-user" cols="25" rows="6"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </li>
               </ul>
             </fieldset>
@@ -193,46 +195,49 @@
       </form>
     </section>
   </main>
-  <div class="container">
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
-      </a>
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--twitter" href="#!">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--facebook" href="#!">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--youtube" href="#!">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="developed">
-        <p class="developed__text">Разработано</p>
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">htmlacademy</span>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrap">
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
         </a>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="#!">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#!">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#!">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="developed">
+          <p class="developed__text">Разработано</p>
+          <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">htmlacademy</span>
+          </a>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <!-- POPUP -->
-    <!-- ПОПАП ошибка -->
+  <!-- ПОПАП ошибка -->
 
   <section class="popup popup--error">
     <div class="popup__wrap">
       <h4 class="popup__title popup__title--error">Что-то пошло не так!</h4>
-      <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
       <div class="popup__button-wrap">
-        <a class="popup__link popup__link--error" href="#!" >ок</a>
+        <a class="popup__link popup__link--error" href="#!">ок</a>
       </div>
     </div>
   </section>
@@ -242,10 +247,11 @@
   <section class="popup popup--sent">
     <div class="popup__wrap popup__wrap--sent">
       <h4 class="popup__title popup__title--sent">Ваша заявка отправлена</h4>
-      <p class="popup__text popup__text--sent">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+      <p class="popup__text popup__text--sent">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+        время мы рассмотрим ее и
         <br class="popup__carryover"> оповестим вас.</p>
       <div class="popup__button-wrap popup__button-wrap--sent">
-        <a class="popup__link popup__link--sent" href="#!" >Закрыть окно</a>
+        <a class="popup__link popup__link--sent" href="#!">Закрыть окно</a>
       </div>
     </div>
   </section>
