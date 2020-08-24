@@ -14,33 +14,34 @@
 <body class="page__body">
   <!--Элеменнт блока страницы двойное подчеркивание-->
   <header class="page-header">
-      <nav class="navigation navigation--open navigation--nojs">
-        <button type="button" class="navigation__toggle">
-          <span class="visually-hidden">Развернуть меню</span>
-        </button>
-        <div class="navigation__wrap">
-          <a class="navigation__logo" href="index.html">
-            <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта Pink">
+    <nav class="navigation navigation--open navigation--nojs">
+      <button type="button" class="navigation__toggle">
+        <span class="visually-hidden">Развернуть меню</span>
+      </button>
+      <div class="navigation__wrap">
+        <a class="navigation__logo" href="index.html">
+          <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
+            alt="Логотип сайта Pink">
           <!-- <img class="navigation__logo-img" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
           <!-- <img class="navigation__logo-img" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
-          </a>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="link navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item navigation__item--active">
-              <a class="link navigation__link">Фотографии</a>
-            </li>
-            <li class="navigation__item">
-              <a class="link navigation__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="navigation__item">
-              <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-                target="_blank">HTMLAcademy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        </a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="link navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a class="link navigation__link">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
+              target="_blank">HTMLAcademy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <section class="hero">
@@ -65,18 +66,20 @@
           <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" width="320" height="137"
             alt="Канатный мост через обрыв">
         </a>
-        <div class="user-story__wrap user-story__wrap--best-panorama">
-          <div class="user-story__title-time-wrap">
-            <h4 class="user-story__title">Анна</h4>
-            <time class="user-story__time" datetime="20h 05m">(5 минут назад)</time>
+        <div class="container">
+          <div class="user-story__wrap user-story__wrap--best-panorama">
+            <div class="user-story__title-time-wrap">
+              <h4 class="user-story__title">Анна</h4>
+              <time class="user-story__time" datetime="20h 05m">(5 минут назад)</time>
+            </div>
+            <p class="user-story__text user-story__text--best-panorama">Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <button type="button" class="user-story__like user-story__like--best-panorama">Нравится
+              <span class="user-story__counter js-like-counter">215</span>
+            </button>
           </div>
-          <p class="user-story__text user-story__text--best-panorama">Прыгать или нет? Напишите в
-            комментарии свой совет и
-            смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
-          <button type="button" class="user-story__like user-story__like--best-panorama">Нравится
-            <span class="user-story__counter js-like-counter">215</span>
-          </button>
         </div>
       </article>
       <div class="container">
@@ -195,12 +198,12 @@
     <!-- Редактирование фотографий -->
     <section class="editing">
       <div class="container container--mobile">
-      <h4 class="visually-hidden">Редактирование фотографий</h4>
+        <h4 class="visually-hidden">Редактирование фотографий</h4>
         <div class="editing__text-wrap">
           <p class="editing__text">Затмите их всех!</p>
           <p class="editing__text">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-      <article class="editing__article">
+        <article class="editing__article">
           <div class="editing__article-wrap">
             <a href="#!" class="editing__link">
               <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
@@ -249,8 +252,8 @@
               </div>
             </div>
           </div>
-      </article>
-    </div>
+        </article>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
