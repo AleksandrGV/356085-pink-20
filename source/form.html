@@ -88,34 +88,34 @@
         <!-- Чекбокс -->
         <div class="form__fieldset-wrap form__fieldset-wrap--checkbox">
           <div class="container">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--checkbox">
               <legend class="form__legend">Ваши безбашенные
                 достижения в путешествии</legend>
               <div class="form__user-wrap">
                 <ul class="form__list form__list--checkbox">
                   <li class="form__item-checkbox">
-                    <input type="checkbox" class="visually-hidden" id="field-checkbox-1" name="checkbox-first" checked>
-                    <label for="field-checkbox-1">Сделал селфи с акулой</label>
+                    <input type="checkbox" class="visually-hidden form__input-checkbox" id="field-checkbox-1" name="checkbox-first" checked>
+                    <label class="form__label-checkbox" for="field-checkbox-1">Сделал селфи с акулой</label>
                   </li>
                   <li class="form__item-checkbox">
-                    <input type="checkbox" class="visually-hidden" id="field-checkbox-2" name="checkbox-second" checked>
-                    <label for="field-checkbox-2">Обгорел на пляже</label>
+                    <input type="checkbox" class="visually-hidden form__input-checkbox" id="field-checkbox-2" name="checkbox-second" checked>
+                    <label class="form__label-checkbox" for="field-checkbox-2">Обгорел на пляже</label>
                   </li>
                   <li class="form__item-checkbox">
-                    <input type="checkbox" class="visually-hidden" id="field-checkbox-3" name="checkbox-three">
-                    <label for="field-checkbox-3">Видел Чака Норриса</label>
+                    <input type="checkbox" class="visually-hidden form__input-checkbox" id="field-checkbox-3" name="checkbox-three">
+                    <label class="form__label-checkbox" for="field-checkbox-3">Видел Чака Норриса</label>
                   </li>
                   <li class="form__item-checkbox">
-                    <input type="checkbox" class="visually-hidden" id="field-checkbox-4" name="checkbox-four">
-                    <label for="field-checkbox-4">Накупил сувениров</label>
+                    <input type="checkbox" class="visually-hidden form__input-checkbox" id="field-checkbox-4" name="checkbox-four">
+                    <label class="form__label-checkbox" for="field-checkbox-4">Накупил сувениров</label>
                   </li>
                   <li class="form__item-checkbox">
-                    <input type="checkbox" class="visually-hidden" id="field-checkbox-5" name="checkbox-five" checked>
-                    <label for="field-checkbox-5">Удержал башню</label>
+                    <input type="checkbox" class="visually-hidden form__input-checkbox" id="field-checkbox-5" name="checkbox-five" checked>
+                    <label class="form__label-checkbox" for="field-checkbox-5">Удержал башню</label>
                   </li>
                   <li class="form__item-checkbox">
-                    <input type="checkbox" class="visually-hidden" id="field-checkbox-6" name="checkbox-six">
-                    <label for="field-checkbox-6">Разгромил отель</label>
+                    <input type="checkbox" class="visually-hidden form__input-checkbox" id="field-checkbox-6" name="checkbox-six">
+                    <label class="form__label-checkbox" for="field-checkbox-6">Разгромил отель</label>
                   </li>
                 </ul>
               </div>
@@ -151,17 +151,17 @@
               <div class="page-form__wrap">
                 <ul class="form__list form__list--radio">
                   <li class="form__item-radio">
-                    <input class="visually-hidden" type="radio" id="field-radio-1" name="radio-applications"
+                    <input class="visually-hidden form_input-radio" type="radio" id="field-radio-1" name="radio-applications"
                       value="pink-ios" checked>
                     <label for="field-radio-1" class="form__label-radio">Pink для iOS</label>
                   </li>
                   <li class="form__item-radio">
-                    <input class="visually-hidden" type="radio" id="field-radio-2" name="radio-applications"
+                    <input class="visually-hidden form_input-radio" type="radio" id="field-radio-2" name="radio-applications"
                       value="pink-android">
                     <label for="field-radio-2" class="form__label-radio">Pink на Android</label>
                   </li>
                   <li class="form__item-radio">
-                    <input class="visually-hidden" type="radio" id="field-radio-3" name="radio-applications"
+                    <input class="visually-hidden form_input-radio" type="radio" id="field-radio-3" name="radio-applications"
                       value="pink-windows-phone">
                     <label for="field-radio-3" class="form__label-radio">Windows Phone</label>
                   </li>
@@ -189,7 +189,7 @@
                 <button type="submit" class="form__button-send">Отправить форму</button>
               </div>
               <small class="form__small">
-                <span class="form__small-star">*</span> — обязательные поля
+                <span class="form__small-star">*</span> — обязательные <span class="form__small-desktop">для заполнения</span> поля
               </small>
             </div>
           </div>

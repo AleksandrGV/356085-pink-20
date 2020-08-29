@@ -90,6 +90,19 @@
   text-align: center;
   position: relative;
 
+  &::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #d22856;
+    border: 10px solid #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
   &::after {
     content: "";
     width: 100%;

@@ -37,7 +37,8 @@
 }
 
 .navigation__logo {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding: 20px 15px;
 }
 
@@ -95,7 +96,7 @@
 
 .navigation__toggle {
   position: absolute;
-  right: 20px;
+  right: 14px;
   top: 50%;
   display: block;
   width: 50px;
@@ -124,14 +125,14 @@
 .navigation--open .navigation__toggle {
   top: 35px;
   left: auto;
-  right: 20px;
+  right: 14px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 14px;
+    top: 11px;
+    right: 12px;
     width: 23px;
     height: 2px;
     background-color: #ffffff;

@@ -13,6 +13,8 @@
   }
 }
 
+// Круги управления слайдером
+
 .slider__dots {
   .list-reset();
   display: flex;
@@ -35,6 +37,28 @@
   }
 }
 
+.slider__dots-item {
+  margin: 0 10px;
+}
+
+.slider__button {
+  width: 6px;
+  height: 6px;
+  display: flex;
+  align-items: center;
+  border: 3px solid rgba(@dark-blue, 0.3);
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+
+  &--active {
+    width: 9px;
+    height: 9px;
+    background-color: @white;
+    border: 3px solid @dark-blue;
+  }
+}
+
 .slider__control {
   display: none;
 
@@ -42,4 +66,23 @@
     .list-reset();
     display: block;
   });
+}
+
+.slider__arrow {
+  width: 22px;
+  height: 41px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-image: url("../img/icon-review-arrow-left.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &--right {
+    background-image: url("../img/icon-review-arrow-right.svg");
+    right: 20px;
+  }
 }

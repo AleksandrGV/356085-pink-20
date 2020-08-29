@@ -3,6 +3,24 @@
 .user-stories {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.user-stories__main-story {
+  width: 136px;
+  height: 40px;
+  color: @white;
+  background-color: @crimson;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 5px;
+  position: relative;
+  top: 40px;
+  margin-left: auto;
+
+  .tablet ({
+    top: 94px;
+  });
 }
 
 .user-stories__header {
@@ -13,7 +31,7 @@
 
 .user-stories__header-text {
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.5;
 
   .tablet ({
     width: 80%;
