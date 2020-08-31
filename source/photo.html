@@ -60,7 +60,9 @@
             Видите, как не хватает ваших?</p>
         </header>
       </div>
-      <div class="user-stories__main-story">Панорама дня</div>
+      <div class="container">
+        <div class="user-stories__main-story">Панорама дня</div>
+      </div>
       <article class="user-story user-story--best-panorama">
         <a class="user-story__link user-story__link--1" href="#!">
           <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" width="320" height="137"
@@ -76,7 +78,7 @@
               комментарии свой совет и
               смотрите прямую трансляцию в
               перископе, задавайте свои вопросы!</p>
-            <button type="button" class="user-story__like user-story__like--best-panorama">Нравится
+            <button type="button" class="user-story__like user-story__like--best-panorama">Нравится:
               <span class="user-story__counter js-like-counter">215</span>
             </button>
           </div>
@@ -96,7 +98,7 @@
                   <time class="user-story__time" datetime="13h 05m">(5 часов назад)</time>
                 </div>
                 <p class="user-story__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <button type="button" class="user-story__like">Нравится
+                <button type="button" class="user-story__like">Нравится:
                   <span class="user-story__counter js-like-counter">356</span>
                 </button>
               </div>
@@ -114,7 +116,7 @@
                   <time class="user-story__time" datetime="08h 05m">(12 часов назад)</time>
                 </div>
                 <p class="user-story__text">Соседи будут рады!</p>
-                <button type="button" class="user-story__like">Нравится
+                <button type="button" class="user-story__like">Нравится:
                   <span class="user-story__counter js-like-counter">666</span>
                 </button>
               </div>
@@ -132,7 +134,7 @@
                   <time class="user-story__time" datetime="00h 05m">(20 часов назад)</time>
                 </div>
                 <p class="user-story__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button type="button" class="user-story__like">Нравится
+                <button type="button" class="user-story__like">Нравится:
                   <span class="user-story__counter js-like-counter">215</span>
                 </button>
               </div>
@@ -150,7 +152,7 @@
                   <time class="user-story__time" datetime="1d 19h 05m">(25 часов назад)</time>
                 </div>
                 <p class="user-story__text">Самая кубанская в мире!</p>
-                <button type="button" class="user-story__like">Нравится
+                <button type="button" class="user-story__like">Нравится:
                   <span class="user-story__counter js-like-counter">4</span>
                 </button>
               </div>
@@ -168,7 +170,7 @@
                   <time class="user-story__time" datetime="1d 04h 05m">(40 часов назад)</time>
                 </div>
                 <p class="user-story__text">Где снег-то?</p>
-                <button type="button" class="user-story__like">Нравится
+                <button type="button" class="user-story__like">Нравится:
                   <span class="user-story__counter js-like-counter">150</span>
                 </button>
               </div>
@@ -186,7 +188,7 @@
                   <time class="user-story__time" datetime="2d 23h 05m">(45 часов назад)</time>
                 </div>
                 <p class="user-story__text">Самая кубанская в мире!</p>
-                <button type="button" class="user-story__like">Нравится
+                <button type="button" class="user-story__like">Нравится:
                   <span class="user-story__counter js-like-counter">2560</span>
                 </button>
               </div>
@@ -207,48 +209,49 @@
           <div class="editing__article-wrap">
             <a href="#!" class="editing__link">
               <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
-              <!-- <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
-              <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение">
+              <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение">
+              <!-- <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
             </a>
             <div class="editing__wrap-button">
               <div class="editing__button-range-controls-wrap">
-                <div class="editing__button-range-controls">
-                  <button type="button" class="editing__button editing__button--crop">
-                    <span class="visually-hidden">Обрезать</span>
-                  </button>
-                  <div class="editing__range-controls editing__range-controls--active">
-                    <div class="editing__scale">
-                      <div class="editing__bar"></div>
+                <div class="editing__button-range-controls-internal-wrap">
+                  <div class="editing__button-range-controls">
+                    <button type="button" class="editing__button editing__button--crop">
+                      <span class="visually-hidden">Обрезать</span>
+                    </button>
+                    <div class="editing__range-controls editing__range-controls--active">
+                      <div class="editing__scale"></div>
+                      <div class="editing__toggle editing__toggle--crop"></div>
                     </div>
-                    <div class="editing__toggle"></div>
+                  </div>
+                  <div class="editing__button-range-controls">
+                    <button type="button" class="editing__button editing__button--fill">
+                      <span class="visually-hidden">Заливка</span>
+                    </button>
+                    <div class="editing__range-controls">
+                      <div class="editing__scale"></div>
+                      <div class="editing__toggle editing__toggle--fill"></div>
+                    </div>
+                  </div>
+                  <div class="editing__button-range-controls">
+                    <button type="button" class="editing__button editing__button--contrast">
+                      <span class="visually-hidden">Контраст</span>
+                    </button>
+                    <div class="editing__range-controls">
+                      <div class="editing__scale"></div>
+                      <div class="editing__toggle editing__toggle--contrast"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="editing__button-range-controls">
-                  <button type="button" class="editing__button editing__button--fill">
-                    <span class="visually-hidden">Заливка</span>
-                  </button>
-                  <div class="editing__range-controls">
-                    <div class="editing__scale">
-                      <div class="editing__bar"></div>
-                    </div>
-                    <div class="editing__toggle"></div>
-                  </div>
-                </div>
-                <div class="editing__button-range-controls">
-                  <button type="button" class="editing__button editing__button--contrast">
-                    <span class="visually-hidden">Контраст</span>
-                  </button>
-                  <div class="editing__range-controls">
-                    <div class="editing__scale">
-                      <div class="editing__bar"></div>
-                    </div>
-                    <div class="editing__toggle"></div>
-                  </div>
+                <!-- Ползунок для мобильной версии -->
+                <div class="editing__range-controls editing__range-controls--mobile">
+                  <div class="editing__scale"></div>
+                  <div class="editing__toggle"></div>
                 </div>
               </div>
               <div class="editing__button-bottom-wrap">
-                <button type="submit" class="editing__button-bottom editing__post">Запостить</button>
-                <button type="reset" class="editing__button-bottom editing__close">Отмена</button>
+                <button type="submit" class="editing__button-bottom editing__button-bottom--post">Запостить</button>
+                <button type="reset" class="editing__button-bottom editing__button-bottom--close">Отмена</button>
               </div>
             </div>
           </div>

@@ -30,6 +30,16 @@
       grid-template-columns: 1fr 1fr;
     });
   }
+
+  .tablet ({
+    padding-left: 30px;
+    padding-right: 30px;
+  });
+
+  .desktop ({
+    padding-left: 25px;
+    padding-right: 25px;
+  });
 }
 
 .user-story__title-time-wrap {
@@ -39,6 +49,11 @@
 
 .user-story__title {
   margin-right: 5px;
+}
+
+.user-story__text {
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .user-story__text--best-panorama {
@@ -72,4 +87,14 @@
   .tablet ({
     justify-self: end;
   });
+}
+
+.user-story__like {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.2;
+  color: @crimson;
+  background: none;
+  border: none;
+  padding: 0;
 }
