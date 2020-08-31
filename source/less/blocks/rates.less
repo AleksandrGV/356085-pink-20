@@ -59,6 +59,30 @@
   position: relative;
 }
 
+// ХИТ
+
+.rates__hit {
+  overflow: hidden;
+
+  &::before {
+    content: "Хит";
+    color: @white;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    padding-left: 42px;
+    padding-right: 40px;
+    background-color: @crimson;
+    transform: rotate(-45deg) translateX(50%);
+    transform-origin: 100% 0;
+  }
+}
+
 .rates__header {
   background-color: @dark-blue;
   color: @white;
@@ -134,27 +158,3 @@
   });
 }
 
-// ХИТ
-
-.hit {
-  overflow: hidden;
-}
-
-.hit::before {
-  content: "Хит";
-  color: @white;
-  width: 100px;
-  text-align: center;
-  text-transform: uppercase;
-  position: absolute;
-  top: 10px;
-  left: -100px;
-  //right: 13px;
-  padding-top: 9px;
-  padding-bottom: 3px;
-  padding-left: 42px;
-  padding-right: 40px;
-  background-color: @crimson;
-  transform: rotate(-45deg) translateX(50%);
-  transform-origin: 100% 0;
-}
