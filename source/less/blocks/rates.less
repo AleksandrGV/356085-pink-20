@@ -57,31 +57,32 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
 
-// ХИТ
+  // ХИТ
 
-.rates__hit {
-  overflow: hidden;
+  &--hit {
+    overflow: hidden;
 
-  &::before {
-    content: "Хит";
-    color: @white;
-    width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    position: absolute;
-    top: 10px;
-    left: -100px;
-    padding-top: 9px;
-    padding-bottom: 3px;
-    padding-left: 42px;
-    padding-right: 40px;
-    background-color: @crimson;
-    transform: rotate(-45deg) translateX(50%);
-    transform-origin: 100% 0;
+    &::before {
+      content: "Хит";
+      color: @white;
+      width: 100px;
+      text-align: center;
+      text-transform: uppercase;
+      position: absolute;
+      top: 10px;
+      left: -100px;
+      padding-top: 9px;
+      padding-bottom: 3px;
+      padding-left: 42px;
+      padding-right: 40px;
+      background-color: @crimson;
+      transform: rotate(-45deg) translateX(50%);
+      transform-origin: 100% 0;
+    }
   }
 }
+
 
 .rates__header {
   background-color: @dark-blue;
