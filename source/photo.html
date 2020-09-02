@@ -20,10 +20,11 @@
       </button>
       <div class="navigation__wrap">
         <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-            alt="Логотип сайта Pink">
-          <!-- <img class="navigation__logo-img" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
-          <!-- <img class="navigation__logo-img" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+          <picture>
+            <source media="(width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Pink">
+          </picture>
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -65,8 +66,12 @@
       </div>
       <article class="user-story user-story--best-panorama">
         <a class="user-story__link user-story__link--1" href="#!">
-          <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" width="320" height="137"
-            alt="Канатный мост через обрыв">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+            <img class="user-story__link-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg"
+              alt="Мост через обрыв">
+          </picture>
         </a>
         <div class="container">
           <div class="user-story__wrap user-story__wrap--best-panorama">
@@ -89,8 +94,14 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--2" href="#!">
-                <img class="user-story__link-img" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-                  alt="Снимок автомобиля">
+                <picture>
+                  <source media="(min-width: 960px)"
+                    srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="user-story__link-img" src="img/photo-car-mobile@1x.jpg"
+                    srcset="img/photo-car-mobile@2x.jpg" alt="Снимок автомобиля">
+                </picture>
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -107,8 +118,14 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--3" href="#!">
-                <img class="user-story__link-img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-                  alt="Барабанная установка">
+                <picture>
+                  <source media="(min-width: 960px)"
+                    srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="user-story__link-img" src="img/photo-drumset-mobile@1x.jpg"
+                    srcset="img/photo-drumset-mobile@2x.jpg" alt="Барабанная установка">
+                </picture>
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -125,8 +142,14 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--4" href="#!">
-                <img class="user-story__link-img" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-                  alt="Окна">
+                <picture>
+                  <source media="(min-width: 960px)"
+                    srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="user-story__link-img" src="img/photo-window-mobile@1x.jpg"
+                    srcset="img/photo-window-mobile@2x.jpg" alt="Окна">
+                </picture>
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -143,8 +166,14 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--5" href="#!">
-                <img class="user-story__link-img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-                  alt="Кубанская бахча">
+                <picture>
+                  <source media="(min-width: 960px)"
+                    srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="user-story__link-img" src="img/photo-fair-mobile@1x.jpg"
+                    srcset="img/photo-fair-mobile@2x.jpg" alt="Кубанская бахча">
+                </picture>
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -161,8 +190,14 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--6" href="#!">
-                <img class="user-story__link-img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-                  alt="Выше всех">
+                <picture>
+                  <source media="(min-width: 960px)"
+                    srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="user-story__link-img" src="img/photo-pov-mobile@1x.jpg"
+                    srcset="img/photo-pov-mobile@2x.jpg" alt="Выше всех">
+                </picture>
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -179,8 +214,14 @@
           <li class="user-stories__item">
             <article class="user-story">
               <a class="user-story__link user-story__link--7" href="#!">
-                <img class="user-story__link-img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-                  alt="Закат с борта самолета">
+                <picture>
+                  <source media="(min-width: 960px)"
+                    srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="user-story__link-img" src="img/photo-wing-mobile@1x.jpg"
+                    srcset="img/photo-wing-mobile@2x.jpg" alt="Закат с борта самолета">
+                </picture>
               </a>
               <div class="user-story__wrap">
                 <div class="user-story__title-time-wrap">
@@ -263,7 +304,10 @@
     <div class="container">
       <div class="page-footer__wrap">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
+          </picture>
         </a>
         <ul class="socials">
           <li class="socials__item">

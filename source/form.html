@@ -20,10 +20,11 @@
       </button>
       <div class="navigation__wrap">
         <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-            alt="Логотип сайта Pink">
-          <!-- <img class="navigation__logo-img" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
-          <!-- <img class="navigation__logo-img" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+          <picture>
+            <source media="(width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <source media="(width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Pink">
+          </picture>
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -42,7 +43,6 @@
         </ul>
       </div>
     </nav>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Конкурсы</h1>
@@ -125,8 +125,8 @@
                   </li>
                 </ul>
               </div>
+            </fieldset>
           </div>
-          </fieldset>
         </div>
         <!-- Поля ввода 2 часть -->
         <div class="form__user-wrap form__user-wrap--content-information">
@@ -180,7 +180,7 @@
         <div class="form__user-wrap form__user-wrap--message">
           <div class="container">
             <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend--message" for="field-message-user">Опишите свои эмоции</legend>
+              <legend class="form__legend form__legend--message">Опишите свои эмоции</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <textarea class="form__input form__input--message" id="field-message-user" cols="25" rows="6"
@@ -208,7 +208,10 @@
     <div class="container">
       <div class="page-footer__wrap">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
+          </picture>
         </a>
         <ul class="socials">
           <li class="socials__item">

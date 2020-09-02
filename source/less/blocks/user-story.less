@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  background-color: @very-light-gray;
 
-  &--best-panorama {
-    margin-bottom: 0;
-  }
+  // &--best-panorama {
+  //   margin-bottom: 0;
+  // }
 
   &--best-panorama .user-story__wrap {
     margin: 0  0 20px 0;
@@ -21,7 +22,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
-  background-color: #f2f2f2;
   padding: 8px 17px 20px;
 
   &--best-panorama {
@@ -67,16 +67,8 @@
 }
 
 .user-story__link {
-  display: flex;
+  display: block;
   width: 100%;
-  min-height: 137px;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .tablet ({
-    min-height: 300px;
-  });
 }
 
 .user-story__link-img {
