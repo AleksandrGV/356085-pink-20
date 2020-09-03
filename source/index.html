@@ -20,10 +20,11 @@
       </button>
       <div class="navigation__wrap">
         <a class="navigation__logo">
-          <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23"
-            alt="Логотип сайта Pink">
-          <!-- <img class="navigation__logo-img" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
-          <!-- <img class="navigation__logo-img" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип сайта Pink"> -->
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="navigation__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Pink">
+          </picture>
         </a>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--active">
@@ -51,9 +52,14 @@
         <div class="hero__wrap hero__wrap--index">
           <p class="hero__text hero__text--home">Взгляните на жизнь иначе!</p>
           <div class="hero__img">
-            <img src="img/iphone-hand-mobile@1x.png" width="286" height="286" alt="Город розового цвета">
-            <!-- <img src="img/iphone-hand-tablet@1x.png" width="660" height="545" alt="Город розового цвета"> -->
-            <!-- <img src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="Город розового цвета"> -->
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
+              <img class="hero__img-picture" src="img/iphone-hand-mobile@1x.png"
+                srcset="img/iphone-hand-mobile@2x.png 2x" alt="Город розового цвета">
+            </picture>
           </div>
         </div>
       </div>
@@ -99,32 +105,42 @@
         <div class="container">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__img" src="img/iphone-screen-1-desktop@1x.png" width="186" height="382"
-                alt="Реальный мир">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-                несколько
-                кликов!</p>
+              <img class="advantages__img" src="img/iphone-screen-1-desktop@1x.png"
+                srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Реальный мир">
+              <div class="advantages__wrap-text">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                  несколько
+                  кликов!</p>
+              </div>
             </li>
             <li class="advantages__item">
-              <img class="advantages__img" src="img/iphone-screen-2-desktop@1x.png" width="186" height="382"
-                alt="Розовый мир">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-                эффект</p>
+              <img class="advantages__img" src="img/iphone-screen-2-desktop@1x.png"
+                srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Реальный мир">
+              <div class="advantages__wrap-text">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                  усилить
+                  эффект</p>
+              </div>
             </li>
-            <li class="advantages__item">
-              <img class="advantages__img" src="img/iphone-screen-3-desktop@1x.png" width="186" height="382"
-                alt="Розовый мир смайл">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-                новых
-              </p>
+            <li class="advantages__item advantages__item--active">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img class="advantages__img advantages__img--active" src="img/iphone-screen-mobile@1x.png"
+                  srcset="img/iphone-screen-mobile@2x.png 2x" alt="Вид через приложение пинк">
+              </picture>
+              <div class="advantages__wrap-text">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                  новых
+                </p>
+              </div>
             </li>
           </ul>
-        </div>
-        <div class="advantages__mobile-img">
-          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Вид через приложение пинк">
         </div>
       </div>
     </section>
@@ -252,7 +268,7 @@
             </article>
           </li>
           <li class="rates__item slider__item slider__item--rates slider__item---active">
-            <article class="rates__article rates__hit">
+            <article class="rates__article rates__article--hit">
               <div class="rates__header rates__header--mobile">
                 <h3 class="rates__title">Стандарт</h3>
                 <span class="rates__price">3,99 USD</span>
@@ -345,7 +361,10 @@
     <div class="container">
       <div class="page-footer__wrap">
         <a class="page-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип сайта Pink">
+          </picture>
         </a>
         <ul class="socials">
           <li class="socials__item">

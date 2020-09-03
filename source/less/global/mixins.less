@@ -26,6 +26,12 @@
   }
 }
 
+.retina(@content) {
+  @media (min-resolution: 2dppx) {
+    @content();
+  }
+}
+
 // Стили для кнопки
 
 .button() {
