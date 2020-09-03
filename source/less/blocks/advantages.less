@@ -12,7 +12,7 @@
     height: 40px;
     background-color: @white;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
 
@@ -75,80 +75,73 @@
   });
 }
 
-.advantages__tabs {
-  min-height: 390px;
-  padding-top: 20px;
-
-  .tablet ({
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: relative;
-  });
-}
-
 .advantages__list {
   .list-reset();
-  padding-top: 20px;
+  padding-top: 60px;
   text-align: center;
+  position: relative;
 
-  &--link {
-    margin-top: 30px;
-
-    .tablet ({
-      width: 50%;
-      text-align: left;
-      margin-top: 0;
-    });
-
-    .desktop ({
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-      align-items: baseline;
-      text-align: center;
-    });
-  }
-
-  &--img {
-    .tablet ({
-      position: absolute;
-      bottom: -80px;
-      left: 5%;
-    });
-
-    .desktop ({
-      display: none;
-    });
-  }
-}
-
-.advantages__desktop-img {
-  display: none;
+  .tablet ({
+    min-height: 430px;
+  });
 
   .desktop ({
-    margin: auto;
-    display: block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: baseline;
+    text-align: center;
   });
-}
-
-.advantages__link {
-  text-decoration: none;
-  color: @black;
-  margin-bottom: 30px;
 }
 
 .advantages__item {
-  &--img {
-    display: none;
+  &--active {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
+
+  .tablet ({
+    width: 50%;
+    margin-left: auto;
+  });
+
+  .desktop ({
+    width: 100%;
+    flex-direction: column;
+  });
+}
+
+.advantages__img {
+  display: none;
 
   &--active {
     display: block;
+    margin-top: 30px;
+
+    .tablet ({
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+    });
   }
+
+  .desktop ({
+    display: block;
+    position: relative;
+    bottom: 0;
+    margin-top: 0;
+  });
 }
 
+.advantages__wrap-text {
+  text-align: center;
+
+  .tablet ({
+    text-align: left;
+  });
+}
 
 .advantages__title {
   font-size: 18px;
@@ -167,15 +160,5 @@
     margin: 10px 5px;
     text-align: center;
     font-size: 18px;
-  });
-}
-
-.advantages__mobile-img {
-  width: 157px;
-  height: 320px;
-
-  .tablet ({
-    width: 268px;
-    height: 481px;
   });
 }
