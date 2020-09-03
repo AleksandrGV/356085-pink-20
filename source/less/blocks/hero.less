@@ -12,24 +12,24 @@
   text-align: center;
   padding-top: 55px;
 
-  @media (min-resolution: 2dppx) {
+  .retina ({
     background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
+  });
 
   .tablet ({
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
+    .retina ({
       background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
+    });
   });
 
   .desktop ({
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
+    .retina ({
       background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
+    });
   });
 }
 
@@ -40,7 +40,7 @@
   margin: auto;
 
   .tablet ({
-    margin-top: 15px;
+    margin-top: 55px;
   });
 
   &--index {
