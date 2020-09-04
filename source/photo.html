@@ -249,8 +249,16 @@
         <article class="editing__article">
           <div class="editing__article-wrap">
             <a href="#!" class="editing__link">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+                <img class="user-story__link-img" src="img/photo-road-mobile@1x.jpg"
+                  srcset="img/photo-road-mobile@2x.jpg 2x" alt="Текущее изображение">
+              </picture>
               <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
-              <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение">
+              <!-- <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
               <!-- <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
             </a>
             <div class="editing__wrap-button">
