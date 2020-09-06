@@ -2,4 +2,28 @@
 
 .socials {
   .list-reset();
+  display: flex;
+  margin-bottom: 26px;
+
+  .tablet ({
+    margin-bottom: 0;
+  });
+}
+
+.socials__item {
+  margin: 0 4px;
+}
+
+.socials__link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(@dark-blue, 0.1);
+  border-radius: 50%;
+}
+
+.socials__icon {
+  fill: @crimson;
 }
