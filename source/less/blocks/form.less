@@ -84,6 +84,28 @@
     &--tel-email {
       flex-direction: column-reverse;
       margin: 20px 40px;
+      position: relative;
+
+    }
+
+    &--tel-email::after {
+      content: "";
+      width: 59px;
+      height: 59px;
+      background-color: @light-gray;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &--tel::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      background-image: url("../img/icon-mail.svg");
     }
   });
 }
@@ -99,9 +121,7 @@
     padding: 20px 10px 20px 50px;
   });
 
-  &--2,
-  &--4,
-  &--6 {
+  &:nth-child(2n+2) {
     .desktop ({
       order: 1;
     });
@@ -237,7 +257,7 @@
 }
 
 .form__input {
-  padding: 20px 10px;
+  padding: 17px 10px;
   border: 2px solid @light-gray;
   border-radius: 1px;
   font-size: 18px;

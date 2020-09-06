@@ -315,6 +315,11 @@
           <div class="editing__article-wrap">
             <a href="#!" class="editing__link">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-road-desktop@1x.webp, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-road-tablet@1x.webp, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp, img/photo-road-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)"
                   srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
@@ -322,9 +327,6 @@
                 <img class="user-story__link-img" src="img/photo-road-mobile@1x.jpg"
                   srcset="img/photo-road-mobile@2x.jpg 2x" alt="Текущее изображение">
               </picture>
-              <!-- <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Текущее изображение"> -->
-              <!-- <img src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
-              <!-- <img src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Текущее изображение"> -->
             </a>
             <div class="editing__wrap-button">
               <div class="editing__button-range-controls-wrap">
@@ -332,6 +334,9 @@
                   <div class="editing__button-range-controls">
                     <button type="button" class="editing__button editing__button--crop">
                       <span class="visually-hidden">Обрезать</span>
+                      <svg class="editing__icon editing__icon--crop editing__icon--active" width="44" height="44">
+                        <use href="img/sprite.svg#icon-editor-crop"></use>
+                      </svg>
                     </button>
                     <div class="editing__range-controls editing__range-controls--active">
                       <div class="editing__scale"></div>
@@ -341,6 +346,9 @@
                   <div class="editing__button-range-controls">
                     <button type="button" class="editing__button editing__button--fill">
                       <span class="visually-hidden">Заливка</span>
+                      <svg class="editing__icon editing__icon--fill" width="48" height="43">
+                        <use href="img/sprite.svg#icon-editor-fill"></use>
+                      </svg>
                     </button>
                     <div class="editing__range-controls">
                       <div class="editing__scale"></div>
@@ -350,6 +358,9 @@
                   <div class="editing__button-range-controls">
                     <button type="button" class="editing__button editing__button--contrast">
                       <span class="visually-hidden">Контраст</span>
+                      <svg class="editing__icon editing__icon--contrast" width="32" height="32">
+                        <use href="img/sprite.svg#icon-editor-contrast"></use>
+                      </svg>
                     </button>
                     <div class="editing__range-controls">
                       <div class="editing__scale"></div>
