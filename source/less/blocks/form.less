@@ -121,7 +121,7 @@
     padding: 20px 10px 20px 50px;
   });
 
-  &:nth-child(2n+2) {
+  &:nth-child(even) {
     .desktop ({
       order: 1;
     });
@@ -142,7 +142,7 @@
   &--radio {
     .desktop ({
       min-height: 297px;
-      margin: 5px auto 0;
+      margin: 20px auto 0;
       padding: 0;
     });
   }
@@ -275,19 +275,20 @@
   .tablet ({
     width: 100%;
   });
-}
 
-.form__input--message {
-  resize: none;
+  &--message {
+    resize: none;
+    padding: 15px 20px;
 
-  .tablet ({
-    width: 79%;
-    margin: auto;
-  });
+    .tablet ({
+      width: 79%;
+      margin: auto;
+    });
 
-  .desktop ({
-    width: 85%;
-  });
+    .desktop ({
+      width: 85%;
+    });
+  }
 }
 
 .form__legend {
@@ -311,7 +312,7 @@
 
   &--radio {
     .desktop ({
-      margin-bottom: 65px;
+      margin-bottom: 50px;
     });
   }
 }
