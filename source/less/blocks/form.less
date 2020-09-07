@@ -84,6 +84,28 @@
     &--tel-email {
       flex-direction: column-reverse;
       margin: 20px 40px;
+      position: relative;
+
+    }
+
+    &--tel-email::after {
+      content: "";
+      width: 59px;
+      height: 59px;
+      background-color: @light-gray;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &--tel::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      background-image: url("../img/icon-mail.svg");
     }
   });
 }
@@ -99,9 +121,7 @@
     padding: 20px 10px 20px 50px;
   });
 
-  &--2,
-  &--4,
-  &--6 {
+  &:nth-child(even) {
     .desktop ({
       order: 1;
     });
@@ -122,7 +142,7 @@
   &--radio {
     .desktop ({
       min-height: 297px;
-      margin: 5px auto 0;
+      margin: 20px auto 0;
       padding: 0;
     });
   }
@@ -237,7 +257,7 @@
 }
 
 .form__input {
-  padding: 20px 10px;
+  padding: 17px 10px;
   border: 2px solid @light-gray;
   border-radius: 1px;
   font-size: 18px;
@@ -246,24 +266,29 @@
 
   &--tel-email {
     margin-bottom: 20px;
+
+    .tablet ({
+      padding-right: 65px;
+    });
   }
 
   .tablet ({
     width: 100%;
   });
-}
 
-.form__input--message {
-  resize: none;
+  &--message {
+    resize: none;
+    padding: 15px 20px;
 
-  .tablet ({
-    width: 79%;
-    margin: auto;
-  });
+    .tablet ({
+      width: 79%;
+      margin: auto;
+    });
 
-  .desktop ({
-    width: 85%;
-  });
+    .desktop ({
+      width: 85%;
+    });
+  }
 }
 
 .form__legend {
@@ -287,7 +312,7 @@
 
   &--radio {
     .desktop ({
-      margin-bottom: 65px;
+      margin-bottom: 50px;
     });
   }
 }

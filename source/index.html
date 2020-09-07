@@ -191,6 +191,9 @@
         <div class="comments__wrap slider">
           <div class="comments__list slider__list">
             <blockquote class="comments__item slider__item slider__item--active">
+              <svg class="comments__icon" width="79" height="63">
+                <use href="img/sprite.svg#icon-quotes"></use>
+              </svg>
               <div class="comments__item-wrap">
                 <div class="comments__user-wrap">
                   <cite class="comments__title">Николай Петров</cite>
@@ -202,6 +205,9 @@
               </div>
             </blockquote>
             <blockquote class="comments__item slider__item">
+              <svg class="comments__icon" width="79" height="63">
+                <use href="img/sprite.svg#icon-quotes"></use>
+              </svg>
               <div class="comments__item-wrap">
                 <div class="comments__user-wrap">
                   <cite class="comments__title">Николай Петров</cite>
@@ -213,6 +219,9 @@
               </div>
             </blockquote>
             <blockquote class="comments__item slider__item">
+              <svg class="comments__icon" width="79" height="63">
+                <use href="img/sprite.svg#icon-quotes"></use>
+              </svg>
               <div class="comments__item-wrap">
                 <div class="comments__user-wrap">
                   <cite class="comments__title">Николай Петров</cite>
@@ -262,14 +271,101 @@
     <section class="rates">
       <h3 class="visually-hidden">Тарифы</h3>
       <div class="container rates__container container--mobile slider">
-        <ul class="rates__list slider__list slider__list--rates">
-          <li class="rates__item slider__item slider__item--rates rates__item--tariff-name">
+
+        <!-- Вторая версия -->
+        <div class="rates__list slider__list slider__list--rates">
+          <div class="rates__wrap rates__wrap--header">
+            <div class="rates__header rates__header--empty-cell">
+              <h3 class="rates__title">&nbsp;</h3>
+              <span class="rates__price">&nbsp;</span>
+            </div>
+            <div class="rates__header rates__header--base">
+              <h3 class="rates__title">База</h3>
+              <span class="rates__price">1,99 USD</span>
+            </div>
+            <div class="rates__header rates__header--hit">
+              <h3 class="rates__title">Стандарт</h3>
+              <span class="rates__price">3,99 USD</span>
+            </div>
+            <div class="rates__header rates__header--unlim">
+              <h3 class="rates__title">Анлим</h3>
+              <span class="rates__price">9,99 USD</span>
+            </div>
+          </div>
+          <div class="rates__wrap rates__wrap--text">
+            <div class="rates__inner">
+              <p class="rates__text rates__text--tarif-name">Розовый фильтр</p>
+              <p class="rates__text">
+                <span class="rates__hide">Розовый фильтр</span>
+                <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                  <use href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+              <p class="rates__text">
+                <span class="rates__hide">Розовый фильтр</span>
+                <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                  <use href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+              <p class="rates__text">
+                <span class="rates__hide">Розовый фильтр</span>
+                <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                  <use href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="rates__inner">
+              <p class="rates__text rates__text--tarif-name">Смайлики</p>
+              <p class="rates__text">
+                <span class="rates__hide">Смайлики</span>
+                <svg class="rates__icon rates__icon--no" width="27" height="27">
+                  <use href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </p>
+              <p class="rates__text">
+                <span class="rates__hide">Смайлики</span>
+                <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                  <use href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+              <p class="rates__text">
+                <span class="rates__hide">Смайлики</span>
+                <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                  <use href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="rates__inner">
+              <p class="rates__text rates__text--tarif-name">Комментарии</p>
+              <p class="rates__text">
+                <span class="rates__hide">Комментарии</span>
+                <svg class="rates__icon rates__icon--no" width="27" height="27">
+                  <use href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </p>
+              <p class="rates__text">
+                <span class="rates__hide">Комментарии</span>
+                <svg class="rates__icon rates__icon--no" width="27" height="27">
+                  <use href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </p>
+              <p class="rates__text">
+                <span class="rates__hide">Комментарии</span>
+                <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                  <use href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </p>
+            </div>
+          </div>
+
+          <!-- Первая версия -->
+          <!-- <li class="rates__item slider__item slider__item--rates rates__item--tariff-name">
             <article class="rates__article">
               <div class="rates__header rates__empty-cell">
                 <h3 class="rates__title">&nbsp;</h3>
                 <span class="rates__price">&nbsp;</span>
               </div>
-              <div class="rates__text-wrap">
+              <div class="rates__text-wrap rates__text-wrap--first">
                 <p class="rates__text">Розовый фильтр</p>
                 <p class="rates__text">Смайлики</p>
                 <p class="rates__text">Комментарии</p>
@@ -278,19 +374,28 @@
           </li>
           <li class="rates__item slider__item slider__item--rates">
             <article class="rates__article">
-              <div class="rates__header rates__header--mobile">
+              <div class="rates__header rates__header--base rates__header--mobile">
                 <h3 class="rates__title">База</h3>
                 <span class="rates__price">1,99 USD</span>
               </div>
               <div class="rates__text-wrap">
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Розовый фильтр</span>
+                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                    <use href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </p>
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Смайлики</span>
+                  <svg class="rates__icon rates__icon--no" width="27" height="27">
+                    <use href="img/sprite.svg#icon-no"></use>
+                  </svg>
                 </p>
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Комментарии</span>
+                  <svg class="rates__icon rates__icon--no" width="27" height="27">
+                    <use href="img/sprite.svg#icon-no"></use>
+                  </svg>
                 </p>
               </div>
             </article>
@@ -304,36 +409,54 @@
               <div class="rates__text-wrap">
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Розовый фильтр</span>
+                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                    <use href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </p>
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Смайлики</span>
+                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                    <use href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </p>
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Комментарии</span>
+                  <svg class="rates__icon rates__icon--no" width="27" height="27">
+                    <use href="img/sprite.svg#icon-no"></use>
+                  </svg>
                 </p>
               </div>
             </article>
           </li>
           <li class="rates__item slider__item slider__item--rates">
             <article class="rates__article">
-              <div class="rates__header rates__header--mobile">
+              <div class="rates__header rates__header--unlim rates__header--mobile">
                 <h3 class="rates__title">Анлим</h3>
                 <span class="rates__price">9,99 USD</span>
               </div>
-              <div class="rates__text-wrap">
+              <div class="rates__text-wrap rates__text-wrap--last">
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Розовый фильтр</span>
+                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                    <use href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </p>
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Смайлики</span>
+                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                    <use href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </p>
                 <p class="rates__text">&nbsp;
                   <span class="rates__hide">Комментарии</span>
+                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
+                    <use href="img/sprite.svg#icon-yes"></use>
+                  </svg>
                 </p>
               </div>
             </article>
-          </li>
-        </ul>
+          </li> -->
+        </div>
         <!-- Круги переключения слайдера -->
         <ul class="slider__dots slider__dots--rates">
           <li class="slider__dots-item">
@@ -376,6 +499,11 @@
         </div>
         <a href="https://goo.gl/maps/GDhT8vWghBdoiSZx5" class="contacts__link-map" target="_blank">
           <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img class="contacts__img-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"

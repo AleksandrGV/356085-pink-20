@@ -162,7 +162,57 @@
 }
 
 .editing__button {
+  border: none;
+  cursor: pointer;
+  background: none;
   margin-bottom: 20px;
+}
+
+.editing__icon {
+  fill: @dark-blue;
+  opacity: 0.3;
+
+  .tablet ({
+    fill: @crimson;
+    opacity: 1;
+    width: 22px;
+    height: 22px;
+  });
+
+  &--crop {
+    .desktop ({
+      width: 44px;
+      height: 43px;
+    });
+  }
+
+  &--fill {
+    .tablet ({
+      width: 24px;
+    });
+
+    .desktop ({
+      width: 48px;
+      height: 43px;
+    });
+  }
+
+  &--contrast {
+    .tablet ({
+      width: 16px;
+      height: 16px;
+    });
+
+    .desktop ({
+      width: 32px;
+      height: 32px;
+    });
+  }
+}
+
+.editing__icon--active {
+  fill: @crimson;
+  opacity: 1;
 }
 
 // Ползунки
