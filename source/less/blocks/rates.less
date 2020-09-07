@@ -22,8 +22,8 @@
 }
 
 .rates__list {
-  .list-reset();
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: absolute;
 
@@ -33,30 +33,39 @@
   });
 }
 
-.rates__item {
-  width: 280px;
-  position: relative;
+.rates__wrap {
+  display: flex;
 
+  &--text {
+    flex-direction: column;
+    border: 1px solid @light-gray;
+    border-radius: 1px 0 1px 1px;
+  }
+}
+
+.rates__inner {
+  display: flex;
+}
+
+.rates__header {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @dark-blue;
+  color: @white;
+  padding: 20px;
+  border: 1px solid @light-gray;
+  border-top: none;
+  border-bottom: 2px solid @dark-blue;
+  position: relative;
   .tablet ({
     width: 153px;
-    display: block;
   });
 
   .desktop ({
     width: 234px;
   });
-
-  &--tariff-name {
-    .mobile-only ({
-      display: none;
-    });
-  }
-}
-
-.rates__article {
-  display: flex;
-  flex-direction: column;
-  position: relative;
 
   // ХИТ
 
@@ -81,43 +90,30 @@
       transform-origin: 100% 0;
     }
   }
-}
 
+  &--empty-cell {
+    display: none;
+    background-color: @very-light-gray;
+    border: none;
 
-.rates__header {
-  background-color: @dark-blue;
-  color: @white;
-  padding: 20px;
-  border: 1px solid @light-gray;
-  border-bottom: none;
-
-  &--mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .tablet ({
+      display: flex;
+    });
   }
 
   &--base {
-    border-radius: 1px 0 0 0;
+    border-left: 2px solid @dark-blue;
+    border-radius: 1px 0 0;
   }
 
   &--unlim {
+    border-right: 2px solid @dark-blue;
     border-radius: 0 1px 0 0;
   }
-
-  .tablet ({
-    padding: 12px 20px;
-  });
-
-  .desktop ({
-    padding: 16px 20px;
-  });
 }
 
-.rates__empty-cell {
-  background-color: @very-light-gray;
-  border: none;
-  border-bottom: 1px solid @light-gray;
+.rates__header:not(:first-child) {
+  margin-bottom: -2px;
 }
 
 .rates__title {
@@ -144,7 +140,12 @@
   });
 }
 
+.rates__text-wrap {
+  border: 1px solid @light-gray;
+}
+
 .rates__text {
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,43 +157,21 @@
   border: 1px solid @light-gray;
   margin: 0;
 
-  &--1,
-  &--4,
-  &--7,
-  &--10 {
-    border-top: 2px solid @light-gray;
+  &--tarif-name {
+    display: none;
+
+    .tablet ({
+      display: flex;
+    });
   }
 
-  &--1,
-  &--2,
-  &--3 {
-    border-left: 2px solid @light-gray;
-  }
+  .tablet ({
+    width: 153px;
+  });
 
-  &--10,
-  &--11,
-  &--12 {
-    border-right: 2px solid @light-gray;
-  }
-
-  &--3,
-  &--6,
-  &--9,
-  &--12 {
-    border-bottom: 2px solid @light-gray;
-  }
-
-  &--1 {
-    border-radius: 1px 0 0 0;
-  }
-
-  &--3 {
-    border-radius: 0 0 0 1px;
-  }
-
-  &--12 {
-    border-radius: 0 0 1px 0;
-  }
+  .desktop ({
+    width: 234px;
+  });
 
   .tablet ({
     padding: 15px;
