@@ -8,7 +8,7 @@
     position: relative;
     bottom: 300px;
     background: none;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
   });
 
   .desktop ({
@@ -46,22 +46,25 @@
 
 .download-application__link-icon {
   display: block;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 47px;
-  //   height: 57px;
+  &--apple {
+    width: 47px;
+    height: 57px;
+    background-image: url("../img/logo-apple.svg");
+  }
 
-  //   // &--apple {
-  //   // }
-  // }
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background-image: url("../img/logo-microsoft.svg");
+  }
 }
 
 .download-application__list {
