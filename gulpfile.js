@@ -23,9 +23,9 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("style.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
 
@@ -36,7 +36,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -45,7 +45,6 @@ const server = (done) => {
   done();
 };
 
-exports.server = server;
 
 // Watcher
 
@@ -54,10 +53,11 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
+//HTML
 
+const html = () => {
+  return gulp.src("source*.html")
+}
 
 // Imagemin
 
@@ -88,7 +88,43 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 };
 
-exports.sprite = sprite;
+//Clean
+
+const clean = () => {
+  return del(["build"]);
+};
+
+//Copy
+
+const copy = () => {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**/!(icon-*)",
+    "source/js/**",
+    "source/*.ico",
+    "source/*.html"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+};
+
+
+//Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
+  sprite,
+  html
+);
+
+exports.build = build
+
+exports.default = gulp.series(
+  build, server, watcher
+);
