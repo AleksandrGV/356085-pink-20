@@ -100,12 +100,11 @@
       right: 0;
     }
 
-    &--tel::after {
-      background-image: url("../img/icon-phone.svg");
-    }
-
-    &--email::after {
-      background-image: url("../img/icon-mail.svg");
+    &--icon {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      z-index: 1;
     }
   });
 }
@@ -222,7 +221,7 @@
     height: 16px;
     position: absolute;
     left: 7px;
-    background-image: url("../img/icon-yes-crimson.svg");
+    background-image: url("../img/yes-crimson.svg");
     background-repeat: no-repeat;
   }
 }
