@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
   <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -76,28 +76,29 @@
             приложение</a>
           <ul class="download-application__list">
             <li class="download-application__item">
-              <a class="download-application__link-icon" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
+              <a class="download-application__link-icon"
+                href="https://www.apple.com/ru/ios/app-store/" target="_blank">
                 <span class="visually-hidden">Apple</span>
-                <svg class="download__icon" width="47" height="57">
-                  <use href="img/sprite.svg#logo-apple"></use>
+                <svg class="download-application__icon" width="47" height="57">
+                  <use href="img/sprite.svg#icon-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="download-application__item">
-              <a class="download-application__link-icon" href="https://play.google.com/store/apps?hl=ru"
-                target="_blank">
+              <a class="download-application__link-icon"
+                href="https://play.google.com/store/apps?hl=ru" target="_blank">
                 <span class="visually-hidden">Android</span>
-                <svg class="download__icon" width="43" height="47">
-                  <use href="img/sprite.svg#logo-android"></use>
+                <svg class="download-application__icon" width="43" height="47">
+                  <use href="img/sprite.svg#icon-android"></use>
                 </svg>
               </a>
             </li>
             <li class="download-application__item">
-              <a class="download-application__link-icon" href="https://www.microsoft.com/ru-ru/store/apps"
-                target="_blank">
+              <a class="download-application__link-icon"
+                href="https://www.microsoft.com/ru-ru/store/apps" target="_blank">
                 <span class="visually-hidden">Microsoft</span>
-                <svg class="download__icon" width="44" height="41">
-                  <use href="img/sprite.svg#logo-microsoft"></use>
+                <svg class="download-application__icon" width="44" height="41">
+                  <use href="img/sprite.svg#icon-microsoft"></use>
                 </svg>
               </a>
             </li>
@@ -271,8 +272,6 @@
     <section class="rates">
       <h3 class="visually-hidden">Тарифы</h3>
       <div class="container rates__container container--mobile slider">
-
-        <!-- Вторая версия -->
         <div class="rates__list slider__list slider__list--rates">
           <div class="rates__wrap rates__wrap--header">
             <div class="rates__header rates__header--empty-cell">
@@ -357,105 +356,6 @@
               </p>
             </div>
           </div>
-
-          <!-- Первая версия -->
-          <!-- <li class="rates__item slider__item slider__item--rates rates__item--tariff-name">
-            <article class="rates__article">
-              <div class="rates__header rates__empty-cell">
-                <h3 class="rates__title">&nbsp;</h3>
-                <span class="rates__price">&nbsp;</span>
-              </div>
-              <div class="rates__text-wrap rates__text-wrap--first">
-                <p class="rates__text">Розовый фильтр</p>
-                <p class="rates__text">Смайлики</p>
-                <p class="rates__text">Комментарии</p>
-              </div>
-            </article>
-          </li>
-          <li class="rates__item slider__item slider__item--rates">
-            <article class="rates__article">
-              <div class="rates__header rates__header--base rates__header--mobile">
-                <h3 class="rates__title">База</h3>
-                <span class="rates__price">1,99 USD</span>
-              </div>
-              <div class="rates__text-wrap">
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Розовый фильтр</span>
-                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
-                    <use href="img/sprite.svg#icon-yes"></use>
-                  </svg>
-                </p>
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Смайлики</span>
-                  <svg class="rates__icon rates__icon--no" width="27" height="27">
-                    <use href="img/sprite.svg#icon-no"></use>
-                  </svg>
-                </p>
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Комментарии</span>
-                  <svg class="rates__icon rates__icon--no" width="27" height="27">
-                    <use href="img/sprite.svg#icon-no"></use>
-                  </svg>
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="rates__item slider__item slider__item--rates slider__item---active">
-            <article class="rates__article rates__article--hit">
-              <div class="rates__header rates__header--mobile">
-                <h3 class="rates__title">Стандарт</h3>
-                <span class="rates__price">3,99 USD</span>
-              </div>
-              <div class="rates__text-wrap">
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Розовый фильтр</span>
-                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
-                    <use href="img/sprite.svg#icon-yes"></use>
-                  </svg>
-                </p>
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Смайлики</span>
-                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
-                    <use href="img/sprite.svg#icon-yes"></use>
-                  </svg>
-                </p>
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Комментарии</span>
-                  <svg class="rates__icon rates__icon--no" width="27" height="27">
-                    <use href="img/sprite.svg#icon-no"></use>
-                  </svg>
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="rates__item slider__item slider__item--rates">
-            <article class="rates__article">
-              <div class="rates__header rates__header--unlim rates__header--mobile">
-                <h3 class="rates__title">Анлим</h3>
-                <span class="rates__price">9,99 USD</span>
-              </div>
-              <div class="rates__text-wrap rates__text-wrap--last">
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Розовый фильтр</span>
-                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
-                    <use href="img/sprite.svg#icon-yes"></use>
-                  </svg>
-                </p>
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Смайлики</span>
-                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
-                    <use href="img/sprite.svg#icon-yes"></use>
-                  </svg>
-                </p>
-                <p class="rates__text">&nbsp;
-                  <span class="rates__hide">Комментарии</span>
-                  <svg class="rates__icon rates__icon--yes" width="31" height="21">
-                    <use href="img/sprite.svg#icon-yes"></use>
-                  </svg>
-                </p>
-              </div>
-            </article>
-          </li> -->
         </div>
         <!-- Круги переключения слайдера -->
         <ul class="slider__dots slider__dots--rates">

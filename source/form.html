@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Мобильное приложение, которое раскрасит ваши серые будни розовыми красками" />
   <meta name="keywords" content="мобильно приложение, развлечения, впечатления" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -137,12 +137,18 @@
                 <li class="form__item form__item--tel-email form__item--tel">
                   <label for="field-phone" class="form__label">Номер телефона:</label>
                   <input type="tel" class="form__input form__input--tel-email" name="phone" id="field-phone"
-                    placeholder="Номер, пожалуйста">
+                  placeholder="Номер, пожалуйста">
+                  <svg class="form__icon" width="20" height="24">
+                    <use href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </li>
                 <li class="form__item form__item--tel-email form__item--email">
                   <label for="field-email" class="form__label">Адрес почты:</label>
                   <input type="email" class="form__input form__input--tel-email" name="email" id="field-email"
                     placeholder="Введите почту *" required>
+                    <svg class="form__icon" width="20" height="24">
+                      <use href="img/sprite.svg#icon-mail"></use>
+                    </svg>
                 </li>
               </ul>
             </fieldset>
