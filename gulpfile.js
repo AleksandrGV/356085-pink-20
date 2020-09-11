@@ -118,7 +118,7 @@ const build = gulp.series(
   sprite
 );
 
-exports.build = build
+exports.build = build;
 
 exports.default = gulp.series(
   build, server, watcher
