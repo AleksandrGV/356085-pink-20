@@ -6,6 +6,7 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
     "gulp": "4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -16,6 +17,7 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "imagemin-webp": "^6.0.0",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -42,8 +44,5 @@
   "engines": {
     "node": "12.18.2"
   },
-  "dependencies": {
-    "del": "^5.1.0",
-    "imagemin-webp": "^6.0.0"
-  }
+  "dependencies": {}
 }
