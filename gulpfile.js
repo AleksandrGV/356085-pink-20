@@ -53,12 +53,6 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
-//HTML
-
-const html = () => {
-  return gulp.src("source*.html")
-}
-
 // Imagemin
 
 const images = () => {
@@ -119,8 +113,7 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  sprite,
-  html
+  sprite
 );
 
 exports.build = build
