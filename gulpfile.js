@@ -14,19 +14,19 @@ const del = require("del");
 const htmlmin = require("htmlmin");
 const minjs = require("uglify-js");
 
-// //htmlmin почему-то не работает
+//htmlmin
 
-// const html = () => {
-//   return gulp.src("source/*.html")
-//   .pipe(htmlmin({
-//     collapseWhitespace: true,
-//     removeComments: true
-//   }))
-//   .pipe(rename("*.min.html"))
-//   .pipe(gulp.dest("build"));
-// };
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+  .pipe(rename("*.min.html"))
+  .pipe(gulp.dest("build"));
+};
 
-// exports.html = html;
+exports.html = html;
 
 // Styles
 
@@ -51,16 +51,16 @@ exports.styles = styles;
 
 // MiniJS тоже не работает
 
-// const minifyJs = () => {
-//   gulp.src("source/js/*.js")
-//   .pipe(rename("script.js"))
-//   .pipe(gulp.dest("build/js"))
-//   .pipe(minjs())
-//   .pipe(rename("*.min.js"))
-//   .pipe(gulp.dest("build/js"));
-// };
+const minifyJs = () => {
+  gulp.src("source/js/*.js")
+  .pipe(rename("script.js"))
+  .pipe(gulp.dest("build/js"))
+  .pipe(minjs())
+  .pipe(rename("*.min.js"))
+  .pipe(gulp.dest("build/js"));
+};
 
-// exports.minifyJs = minifyJs;
+exports.minifyJs = minifyJs;
 
 // Server
 
@@ -144,7 +144,9 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  sprite
+  sprite,
+  html,
+  minifyJs
 );
 
 exports.build = build;
