@@ -11,10 +11,26 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("htmlmin");
+const minjs = require("uglify-js");
+
+// //htmlmin почему-то не работает
+
+// const html = () => {
+//   return gulp.src("source/*.html")
+//   .pipe(htmlmin({
+//     collapseWhitespace: true,
+//     removeComments: true
+//   }))
+//   .pipe(rename("*.min.html"))
+//   .pipe(gulp.dest("build"));
+// };
+
+// exports.html = html;
 
 // Styles
 
-const styles = () => {
+function styles() {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -29,9 +45,22 @@ const styles = () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
-};
+}
 
 exports.styles = styles;
+
+// MiniJS тоже не работает
+
+// const minifyJs = () => {
+//   gulp.src("source/js/*.js")
+//   .pipe(rename("script.js"))
+//   .pipe(gulp.dest("build/js"))
+//   .pipe(minjs())
+//   .pipe(rename("*.min.js"))
+//   .pipe(gulp.dest("build/js"));
+// };
+
+// exports.minifyJs = minifyJs;
 
 // Server
 

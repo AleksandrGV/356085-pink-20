@@ -17,9 +17,11 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "htmlmin": "0.0.7",
     "imagemin-webp": "^6.0.0",
     "stylelint": "13.6.1",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "0.1.4",
+    "uglify-js": "^3.10.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
