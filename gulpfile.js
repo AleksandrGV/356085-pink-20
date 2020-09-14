@@ -11,8 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const htmlmin = require("htmlmin");
-const minjs = require("uglify-js");
+const htmlmin = require("gulp-htmlmin");
+const minjs = require("gulp-uglify");
 
 //htmlmin
 
@@ -22,7 +22,6 @@ const html = () => {
     collapseWhitespace: true,
     removeComments: true
   }))
-  .pipe(rename("*.min.html"))
   .pipe(gulp.dest("build"));
 };
 
@@ -49,14 +48,12 @@ function styles() {
 
 exports.styles = styles;
 
-// MiniJS тоже не работает
+// MiniJS
 
 const minifyJs = () => {
-  gulp.src("source/js/*.js")
-  .pipe(rename("script.js"))
-  .pipe(gulp.dest("build/js"))
+  return gulp.src("source/js/script.js")
   .pipe(minjs())
-  .pipe(rename("*.min.js"))
+  .pipe(rename("script.min.js"))
   .pipe(gulp.dest("build/js"));
 };
 
@@ -129,8 +126,7 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/!(icon-*)",
     "source/js/**",
-    "source/*.ico",
-    "source/*.html"
+    "source/*.ico"
   ], {
     base: "source"
   })
