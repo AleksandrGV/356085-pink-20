@@ -18,18 +18,18 @@ const minjs = require("gulp-uglify");
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(htmlmin({
-    collapseWhitespace: true,
-    removeComments: true
-  }))
-  .pipe(gulp.dest("build"));
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest("build"));
 };
 
 exports.html = html;
 
 // Styles
 
-function styles() {
+const styles = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -44,7 +44,7 @@ function styles() {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
@@ -52,9 +52,9 @@ exports.styles = styles;
 
 const minifyJs = () => {
   return gulp.src("source/js/script.js")
-  .pipe(minjs())
-  .pipe(rename("script.min.js"))
-  .pipe(gulp.dest("build/js"));
+    .pipe(minjs())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
 };
 
 exports.minifyJs = minifyJs;
@@ -132,7 +132,6 @@ const copy = () => {
   })
     .pipe(gulp.dest("build"));
 };
-
 
 //Build
 
