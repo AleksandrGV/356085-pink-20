@@ -6,13 +6,18 @@
 
   .desktop ({
     margin: auto;
-    padding: 20px 0;
+    padding: 20px 0 10px;
   });
 }
 
 .comments__wrap {
   width: 100%;
   position: relative;
+  margin-bottom: -10px;
+
+  .tablet ({
+    margin-top: 5px;
+  });
 }
 
 .comments__item {
@@ -26,6 +31,7 @@
   .tablet ({
     display: flex;
     flex-direction: column-reverse;
+    margin-left: -20px;
   });
 
   .desktop ({
@@ -48,7 +54,7 @@
 
   .tablet ({
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
   });
 
   .desktop ({
@@ -62,7 +68,7 @@
   .tablet ({
     display: block;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   });
 
   .desktop ({
@@ -71,12 +77,14 @@
 }
 
 .comments__text {
-  line-height: 1.5;
+  line-height: 2.2;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 23px;
 
   .tablet ({
     font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 32px;
   });
 }
 

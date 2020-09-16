@@ -3,7 +3,7 @@
 .socials {
   .list-reset();
   display: flex;
-  margin-bottom: 26px;
+  margin-bottom: 35px;
 
   .tablet ({
     margin-bottom: 0;
@@ -11,17 +11,25 @@
 }
 
 .socials__item {
-  margin: 0 4px;
+  margin-left: 8px;
 }
 
 .socials__link {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid rgba(@dark-blue, 0.1);
   border-radius: 50%;
+
+  &:hover {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .socials__icon {

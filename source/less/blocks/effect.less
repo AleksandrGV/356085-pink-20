@@ -2,7 +2,7 @@
 
 .effect {
   padding: 40px 0;
-  margin-bottom: 70px;
+  margin-bottom: 62px;
   background-color: @white;
   z-index: 10;
 
@@ -15,9 +15,9 @@
   });
 
   .desktop ({
-    padding: 60px 0;
+    padding: 0 0 116px;
     background-color: @very-light-gray;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
   });
 }
 
@@ -25,7 +25,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 40px;
+  margin-top: 45px;
+  margin-left: 20px;
 
   &::before {
     content: "";
@@ -35,7 +36,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    left: 5%;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -44,35 +45,50 @@
     &::before {
       width: 298px;
       height: 345px;
+      left: -10px;
+      top: 121px;
     }
   });
 }
 
 .effect__inner-wrapper {
-  width: 50%;
+  width: 53%;
   margin-left: auto;
+
+  .desktop ({
+    width: 62%;
+  });
 }
 
 .effect__title {
   font-size: 30px;
 
+  br {
+    .desktop ({
+      display: none;
+    });
+  }
+
   .tablet ({
-    margin: 25px 0 10px;
+    margin: 10px 0;
   });
 
   .desktop ({
-    margin-bottom: 40px;
+    margin: 40px 0 21px 4px;
   });
 }
 
 .effect__text {
-  line-height: 1.5;
-  width: 96%;
+  line-height: 1.8;
+  width: 88%;
   margin-top: 0;
+  margin-bottom: 12px;
 
   .desktop ({
+    width: 92%;
     font-size: 18px;
-    margin-bottom: 47px;
+    margin-left: 4px;
+    margin-bottom: 30px;
   });
 
   br {
@@ -87,5 +103,6 @@
 
   .desktop ({
     font-size: 18px;
+    margin-left: 4px;
   });
 }

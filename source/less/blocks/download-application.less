@@ -2,27 +2,29 @@
 
 .download-application {
   background-color: @dark-blue-blue;
-  padding: 20px 0;
+  padding: 28px 0;
 
   .tablet ({
     position: relative;
-    bottom: 300px;
+    bottom: 380px;
     background: none;
-    margin-bottom: -150px;
+    margin-bottom: -280px;
   });
 
   .desktop ({
-    bottom: 8%;
+    bottom: 432px;
   });
 }
 
 .download-application__wrap {
   .tablet ({
-    width: 280px;
+    width: 300px;
+    margin-left: 20px;
   });
 
   .desktop ({
-    width: 35%;
+    width: 31%;
+    margin-left: 10px;
   });
 }
 
@@ -32,15 +34,27 @@
   line-height: 1;
   color: @white;
   text-decoration: none;
-  padding: 21px 15px;
+  padding: 16px 15px;
   border: 3px solid @white;
   border-radius: 29px;
   display: block;
-  text-align: center;
+
+  &:hover {
+    background-color: @white;
+    color: @crimson;
+  }
+
+  &:active {
+    color: rgba(@crimson, 0.3);
+  }
+
+  .tablet ({
+    padding: 14px;
+  });
 
   .desktop ({
     font-size: 21px;
-    padding: 20px 10px;
+    padding: 15px 15px 15px 27px;
   });
 }
 
@@ -52,16 +66,26 @@
 .download-application__list {
   .list-reset();
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  margin: 20px 40px;
+  margin: 25px 39px 20px;
+
+  .desktop ({
+    margin: 68px 45px 48px;
+  });
 }
 
 .download-application__small {
   display: block;
   font-weight: 300;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.6;
   color: @white;
   text-align: center;
+  margin-bottom: 5px;
+
+  .tablet ({
+    font-size: 18px;
+    line-height: 1.3;
+  });
 }

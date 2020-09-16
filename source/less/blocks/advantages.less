@@ -4,12 +4,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 10px;
 
   &::after {
     content: "";
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: @white;
     position: absolute;
     bottom: -1px;
@@ -31,64 +30,69 @@
   flex-direction: column;
   align-items: center;
   font-size: 24px;
-  padding: 20px 0 40px;
+  padding: 17px 0 5px;
 
   .tablet ({
+    width: 100%;
     font-weight: 300;
     font-size: 40px;
     line-height: 1;
     padding-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    margin-left: -10px;
   });
 
   .desktop ({
     font-size: 50px;
-    line-height: 1.4;
+    margin: 0 0 30px;
   });
 }
 
 .advantages__header-text {
   text-align: center;
+  margin-bottom: 5px;
 
   .tablet ({
-    margin: 5px 0;
+    line-height: 1.3;
+    margin: 1px 0;
   });
 }
 
-.advantages__header-text:last-child {
-  margin-bottom: -20px;
-}
 
 .advantages__wrap-list {
   background-image: url("../img/bg-triangle-grey.svg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -25px;
 
   .tablet ({
     padding: 20px 0;
   });
 
   .desktop ({
-    padding-top: 0;
+    padding: 0;
   });
 }
 
 .advantages__list {
   .list-reset();
-  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 110px;
   text-align: center;
   position: relative;
 
   .tablet ({
     min-height: 430px;
+    padding-top: 54px;
   });
 
   .desktop ({
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    padding: 54px 20px;
   });
 }
 
@@ -100,14 +104,21 @@
   }
 
   .tablet ({
-    width: 50%;
+    width: 53%;
     margin-left: auto;
+    margin-bottom: 8px;
   });
 
   .desktop ({
     width: 100%;
     flex-direction: column;
   });
+
+  &:last-child {
+    .desktop ({
+      margin-right: 15px;
+    });
+  }
 }
 
 .advantages__img {
@@ -115,11 +126,11 @@
 
   &--active {
     display: block;
-    margin-top: 30px;
+    margin-top: 27px;
 
     .tablet ({
       position: absolute;
-      left: 0;
+      left: 20px;
       bottom: -20px;
     });
   }
@@ -129,6 +140,7 @@
     position: relative;
     bottom: 0;
     margin-top: 0;
+    margin-bottom: 54px;
   });
 }
 
@@ -137,25 +149,50 @@
 
   .tablet ({
     text-align: left;
+    margin-right: 30px;
+    margin-left: 10px;
+  });
+
+  .desktop ({
+    margin: 0 25px;
   });
 }
 
 .advantages__title {
   font-size: 18px;
+  margin: 17px 0;
+
+  .tablet ({
+    margin: 15px 0;
+  });
 
   .desktop ({
     padding: 0 10px;
     text-align: center;
+    line-height: 1;
     font-size: 30px;
+    margin: 0 0 25px;
   });
 }
 
 .advantages__text {
-  line-height: 1.4;
+  line-height: 1.7;
 
   .desktop ({
     margin: 10px 5px;
     text-align: center;
     font-size: 18px;
+  });
+}
+
+.advantages__text br {
+  display: none;
+
+  .tablet ({
+    display: block;
+  });
+
+  .desktop ({
+    display: none;
   });
 }

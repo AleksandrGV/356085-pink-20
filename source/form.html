@@ -17,7 +17,9 @@
 <body class="page__body">
   <!--Элеменнт блока страницы двойное подчеркивание-->
   <header class="page-header">
-    <nav class="navigation navigation--open navigation--nojs">
+     <!-- navigation--closed меняет состояние меню -->
+     <nav class="navigation navigation--open navigation--nojs">
+      <!-- кнопка открития / закрытия меню -->
       <button type="button" class="navigation__toggle">
         <span class="visually-hidden">Развернуть меню</span>
       </button>
@@ -41,7 +43,7 @@
           </li>
           <li class="navigation__item">
             <a class="link navigation__link" href="https://htmlacademy.ru/intensive/adaptive"
-              target="_blank" rel="noopener noreferrer">HTMLAcademy</a>
+              target="_blank" rel="noopener noreferrer">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -192,7 +194,7 @@
               <legend class="form__legend form__legend--message">Опишите свои эмоции</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <textarea class="form__input form__input--message" id="field-message-user" cols="25" rows="6"
+                  <textarea class="form__input form__input--message" id="field-message-user" cols="25" rows="8"
                     placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </li>
               </ul>
@@ -201,6 +203,7 @@
           <div class="container">
             <div class="form__button-small">
               <div class="form__wrap-button-send">
+                <!-- form__button-send--disabled -->
                 <button type="submit" class="form__button-send">Отправить форму</button>
               </div>
               <small class="form__small">
@@ -291,8 +294,6 @@
       </div>
     </div>
   </section>
-
-  <script src="js/script.min.js"></script>
 
 </body>
 

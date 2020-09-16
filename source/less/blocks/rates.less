@@ -8,7 +8,16 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 80px 0 15px;
+  padding: 100px 0 20px;
+  margin-bottom: 21px;
+
+  .tablet ({
+    padding-top: 42px;
+  });
+
+  .desktop ({
+    padding-bottom: 45px;
+  });
 }
 
 .rates__container {
@@ -25,11 +34,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
 
   .tablet ({
+    max-width: 100%;
     position: relative;
     margin: 50px 0 30px;
+  });
+
+  .desktop ({
+    margin-top: 95px;
   });
 }
 
@@ -54,17 +68,20 @@
   align-items: center;
   background-color: @dark-blue;
   color: @white;
-  padding: 20px;
+  padding: 19px 10px 30px;
   border: 1px solid @light-gray;
   border-top: none;
   border-bottom: 2px solid @dark-blue;
   position: relative;
+
   .tablet ({
     width: 153px;
+    padding: 16px 5px 10px;
   });
 
   .desktop ({
     width: 234px;
+    padding: 18px 5px;
   });
 
   // ХИТ
@@ -75,19 +92,26 @@
     &::before {
       content: "Хит";
       color: @white;
-      width: 100px;
+      width: 122px;
       text-align: center;
       text-transform: uppercase;
       position: absolute;
-      top: 10px;
-      left: -100px;
-      padding-top: 9px;
-      padding-bottom: 3px;
-      padding-left: 42px;
-      padding-right: 40px;
+      top: 26px;
+      left: -104px;
+      padding: 3px 40px 3px 42px;
       background-color: @crimson;
       transform: rotate(-45deg) translateX(50%);
       transform-origin: 100% 0;
+
+      .tablet ({
+        top: 16px;
+        left: -112px;
+      });
+
+      .desktop ({
+        top: 21px;
+        left: -103px;
+      });
     }
   }
 
@@ -125,6 +149,10 @@
   text-align: center;
 
   .desktop ({
+    margin-bottom: 3px;
+  });
+
+  .desktop ({
     font-size: 18px;
   });
 }
@@ -157,7 +185,7 @@
   border: 1px solid @light-gray;
   margin: 0;
 
-  &--tarif-name {
+  &--tariff-name {
     display: none;
 
     .tablet ({
@@ -167,19 +195,15 @@
 
   .tablet ({
     width: 153px;
+    padding: 6px 12px;
+    text-transform: capitalize;
+    min-height: 46px;
   });
 
   .desktop ({
     width: 234px;
-  });
-
-  .tablet ({
-    padding: 15px;
-    text-transform: capitalize;
-  });
-
-  .desktop ({
     font-size: 18px;
+    padding: 18px 5px 16px 19px;
   });
 }
 
