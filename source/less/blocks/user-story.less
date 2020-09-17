@@ -6,6 +6,10 @@
   flex-direction: column;
   margin-bottom: 20px;
   background-color: @very-light-gray;
+
+  &--best-panorama {
+    background: none;
+  }
 }
 
 .user-story__wrap {
@@ -15,8 +19,10 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 11px 7px 20px 15px;
+  margin-top: -2px;
 
   &--best-panorama {
+    background-color: @very-light-gray;
     .tablet ({
       display: grid;
       grid-template-columns: 1fr 1fr;
