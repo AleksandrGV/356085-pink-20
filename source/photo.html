@@ -79,8 +79,8 @@
             <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-            <img class="user-story__link-img user-story__link-img--best-panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-              alt="Мост через обрыв">
+            <img class="user-story__link-img user-story__link-img--best-panorama" src="img/panorama-mobile@1x.jpg"
+              srcset="img/panorama-mobile@2x.jpg 2x" alt="Мост через обрыв">
           </picture>
         </a>
         <div class="container">
@@ -97,10 +97,10 @@
               <svg class="user-story__icon" width="13" height="12">
                 <use href="img/sprite.svg#icon-heart"></use>
               </svg>
-              <div class="user-story__like-counter-wrap">
+              <span class="user-story__like-counter-wrap">
                 Нравится:
                 <span class="user-story__counter js-like-counter">215</span>
-              </div>
+              </span>
             </button>
           </div>
         </div>
@@ -134,10 +134,10 @@
                   <svg class="user-story__icon" width="13" height="12">
                     <use href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <div class="user-story__like-counter-wrap">
+                  <span class="user-story__like-counter-wrap">
                     Нравится:
                     <span class="user-story__counter js-like-counter">356</span>
-                  </div>
+                  </span>
                 </button>
               </div>
             </article>
@@ -170,10 +170,10 @@
                   <svg class="user-story__icon" width="13" height="12">
                     <use href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <div class="user-story__like-counter-wrap">
+                  <span class="user-story__like-counter-wrap">
                     Нравится:
                     <span class="user-story__counter js-like-counter">666</span>
-                  </div>
+                  </span>
                 </button>
               </div>
             </article>
@@ -206,10 +206,10 @@
                   <svg class="user-story__icon" width="13" height="12">
                     <use href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <div class="user-story__like-counter-wrap">
+                  <span class="user-story__like-counter-wrap">
                     Нравится:
                     <span class="user-story__counter js-like-counter">215</span>
-                  </div>
+                  </span>
                 </button>
               </div>
             </article>
@@ -241,10 +241,10 @@
                   <svg class="user-story__icon" width="13" height="12">
                     <use href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <div class="user-story__like-counter-wrap">
+                  <span class="user-story__like-counter-wrap">
                     Нравится:
                     <span class="user-story__counter js-like-counter">4</span>
-                  </div>
+                  </span>
                 </button>
               </div>
             </article>
@@ -276,10 +276,10 @@
                   <svg class="user-story__icon" width="13" height="12">
                     <use href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <div class="user-story__like-counter-wrap">
+                  <span class="user-story__like-counter-wrap">
                     Нравится:
                     <span class="user-story__counter js-like-counter">150</span>
-                  </div>
+                  </span>
                 </button>
               </div>
             </article>
@@ -311,10 +311,10 @@
                   <svg class="user-story__icon" width="13" height="12">
                     <use href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <div class="user-story__like-counter-wrap">
+                  <span class="user-story__like-counter-wrap">
                     Нравится:
                     <span class="user-story__counter js-like-counter">2560</span>
-                  </div>
+                  </span>
                 </button>
               </div>
             </article>
@@ -331,6 +331,7 @@
           <p class="editing__text">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <article class="editing__article">
+          <h6 class="visually-hidden">Редактор фотографий</h6>
           <div class="editing__article-wrap">
             <a href="#!" class="editing__link">
               <picture>

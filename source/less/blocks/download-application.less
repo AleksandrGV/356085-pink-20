@@ -6,9 +6,9 @@
 
   .tablet ({
     position: relative;
-    bottom: 380px;
+    bottom: 425px;
     background: none;
-    margin-bottom: -280px;
+    margin-bottom: -298px;
   });
 
   .desktop ({
@@ -19,7 +19,6 @@
 .download-application__wrap {
   .tablet ({
     width: 300px;
-    margin-left: 20px;
   });
 
   .desktop ({
@@ -34,10 +33,11 @@
   line-height: 1;
   color: @white;
   text-decoration: none;
-  padding: 16px 15px;
+  padding: 16px 16px;
   border: 3px solid @white;
   border-radius: 29px;
   display: block;
+  text-align: center;
 
   &:hover {
     background-color: @white;
@@ -47,10 +47,6 @@
   &:active {
     color: rgba(@crimson, 0.3);
   }
-
-  .tablet ({
-    padding: 14px;
-  });
 
   .desktop ({
     font-size: 21px;
@@ -67,8 +63,13 @@
   .list-reset();
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 25px 39px 20px;
+  justify-content: space-evenly;
+  margin: 33px 0 17px;
+
+  .tablet ({
+    margin-top: 45px;
+    margin-bottom: 30px;
+  });
 
   .desktop ({
     margin: 68px 45px 48px;

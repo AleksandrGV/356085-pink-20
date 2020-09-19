@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   color: @white;
   text-align: center;
-  padding: 55px 0 30px;
+  padding: 50px 0 30px;
 
   .retina ({
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -18,7 +18,7 @@
 
   .tablet ({
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    padding: 32px 0 40px;
+    padding: 32px 0 0;
     margin-bottom: 46px;
 
     .retina ({
@@ -26,6 +26,13 @@
     });
   });
 
+  &--home {
+    padding-bottom: 0;
+
+    .tablet ({
+      padding-top: 40px;
+    });
+  }
   .desktop ({
     background-image: url("../img/bg-back-desktop@1x.jpg");
     margin-top: -15px;
@@ -45,7 +52,6 @@
 
   .tablet ({
     margin-top: 73px;
-    padding-bottom: 70px;
   });
 
   &--index {
@@ -64,11 +70,11 @@
 
   .tablet ({
     font-size: 40px;
-    font-size: 50px;
     margin: 0 60px;
   });
 
   .desktop ({
+    font-size: 50px;
     margin-top: 63px;
   });
 
@@ -80,8 +86,8 @@
     .tablet ({
       width: 240px;
       position: relative;
-      top: 189px;
-      left: 25px;
+      top: 203px;
+      left: 5px;
       margin-left: 25px;
       margin-top: -150px;
     });
@@ -102,10 +108,6 @@
   position: relative;
   top: 3px;
   left: -20px;
-
-  .tablet ({
-    left: 0;
-  });
 }
 
 .hero__img-picture {
@@ -115,12 +117,10 @@
   .tablet ({
     min-width: 700px;
     min-height: 545px;
-    margin-left: -20px;
   });
 
   .desktop ({
     width: 1050px;
     height: 645px;
-    margin-left: 80px;
   });
 }
