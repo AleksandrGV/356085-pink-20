@@ -1,12 +1,8 @@
 // Popup
 
-// Для правильного отображения popup нужно display: flex;
-
 .popup {
-  display: none;
+  display: block;
   width: 320px;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   background-color: @white;
   box-shadow: 0 7px 15px rgba(@black, 0.15);
@@ -30,7 +26,7 @@
 .popup__title {
   font-size: 18px;
   line-height: 1.2;
-  margin: 44px 0 37px;
+  margin: 44px auto 37px;
 
   .tablet ({
     font-size: 30px;
@@ -42,6 +38,7 @@
 .popup__text {
   align-self: center;
   line-height: 1.3;
+  margin: auto;
   margin-bottom: 0;
 
   &--sent {
@@ -51,7 +48,6 @@
 
   .tablet ({
     font-size: 18px;
-    margin: 0 80px;
 
     &--sent {
       width: 330px;
