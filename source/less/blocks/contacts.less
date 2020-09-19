@@ -2,6 +2,10 @@
 
 .contacts {
   padding: 20px 0 0;
+
+  .desktop ({
+    margin-bottom: 63px;
+  });
 }
 
 .contacts__wrap {
@@ -55,7 +59,7 @@
 
   .tablet ({
     width: 40%;
-    margin: 15px auto;
+    margin: 17px auto;
     padding: 0 18px 0 10px;
   });
 
@@ -75,6 +79,13 @@
       order: 3;
     });
   }
+
+  &--call {
+    .desktop ({
+      padding-left: 5px;
+      padding-right: 0;
+    });
+  }
 }
 
 .contacts__write {
@@ -91,7 +102,7 @@
 
   .tablet ({
     margin-top: 10px;
-    margin-bottom: 22px;
+    margin-bottom: 4px;
   });
 }
 
@@ -156,7 +167,11 @@
     z-index: 0;
 
     .tablet ({
-      top: 0px;
+      top: -52px;
+    });
+
+    .desktop ({
+      top: -15px;
     });
   }
 }
@@ -178,6 +193,6 @@
   });
 
   .desktop ({
-    height: 502px;
+    min-height: 485px;
   });
 }

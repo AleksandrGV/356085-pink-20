@@ -28,7 +28,7 @@
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 2;
-      margin-top: -58px;
+      margin-top: -65px;
     });
   }
 
@@ -43,6 +43,7 @@
       grid-column-end: 3;
       grid-row-start: 4;
       grid-row-end: 4;
+      margin-top: 0;
     });
   }
 }
@@ -55,7 +56,7 @@
 
 .form__user-wrap--message .form__fieldset {
   .desktop ({
-    margin-bottom: 75px;
+    margin-bottom: 67px;
   });
 }
 
@@ -64,7 +65,7 @@
   margin: 0 0 20px;
 
   .desktop ({
-    margin-top: 40px;
+    margin-top: 35px;
   });
 
   &--content-information {
@@ -82,14 +83,14 @@
   &--checkbox {
     .desktop ({
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, auto);
+      padding-left: 50px;
     });
   }
 
   &--radio {
     .desktop ({
-      margin: 0;
-      margin-left: 74px;
+      margin: 16px 0 0 74px;
     });
   }
 }
@@ -117,8 +118,8 @@
 
     &--tel-email::after {
       content: "";
-      width: 65px;
-      height: 65px;
+      width: 62px;
+      height: 62px;
       background-color: @light-gray;
       background-repeat: no-repeat;
       background-position: center;
@@ -157,8 +158,8 @@
   margin-bottom: 60px;
 
   .desktop ({
-    margin: auto 10px;
-    padding: 20px 10px 20px 50px;
+    margin: 0 0 21px;
+    padding: 20px 40px 20px 0;
   });
 
   &:nth-child(even) {
@@ -182,7 +183,7 @@
   &--radio {
     .desktop ({
       min-height: 297px;
-      margin: 0 auto 55px;
+      margin: 0 auto 72px;
       padding: 0;
     });
   }
@@ -234,6 +235,7 @@
 }
 
 .form__label {
+  display: block;
   margin: 0 21px 10px;
   color: @crimson;
   text-transform: uppercase;
@@ -336,11 +338,10 @@
 }
 
 .form__input {
-  padding: 20px 10px 20px 23px;
+  padding: 17px 10px 17px 23px;
   border: 2px solid @light-gray;
   border-radius: 1px;
   font-size: 18px;
-  line-height: 1.2;
   text-align: justify;
   font-family: inherit;
 
@@ -358,7 +359,7 @@
   }
 
   .desktop ({
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   });
 
   &--tel-email {
@@ -378,6 +379,7 @@
   });
 
   &--message {
+    width: 100%;
     resize: none;
     padding: 10px 20px;
     margin-bottom: 30px;
@@ -389,7 +391,7 @@
 
     .desktop ({
       width: 92%;
-      height: 135px;
+      height: 130px;
     });
   }
 }
@@ -416,11 +418,11 @@
   }
 
   &--message {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   &--radio {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     .desktop ({
       margin-bottom: 35px;
       padding: 0 20px 0 30px;
@@ -431,6 +433,7 @@
 .form__legend--message + .form__list {
   .desktop ({
     margin-top: 0;
+    margin-bottom: 28px;
   });
 }
 
@@ -455,6 +458,7 @@
   }
 
   .desktop ({
+    width: 300px;
     margin-bottom: 5px;
   });
 }

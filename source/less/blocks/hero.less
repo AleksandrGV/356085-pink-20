@@ -26,11 +26,16 @@
     });
   });
 
+  .desktop ({
+    margin-bottom: 0;
+  });
+
   &--home {
     padding-bottom: 0;
 
     .tablet ({
       padding-top: 40px;
+      margin-bottom: 26px;
     });
   }
   .desktop ({
@@ -71,7 +76,7 @@
   .tablet ({
     font-size: 40px;
     margin: 0 60px;
-    padding-bottom: 100px;
+    padding-bottom: 92px;
   });
 
   .desktop ({
@@ -109,6 +114,10 @@
   position: relative;
   top: 3px;
   left: -20px;
+
+  .tablet ({
+    min-height: 547px;
+  });
 }
 
 .hero__img-picture {
@@ -116,6 +125,8 @@
   height: 286px;
 
   .tablet ({
+    position: absolute;
+    left: -40px;
     min-width: 700px;
     min-height: 545px;
   });
@@ -123,5 +134,7 @@
   .desktop ({
     width: 1050px;
     height: 645px;
+    position: relative;
+    left: 40px;
   });
 }
