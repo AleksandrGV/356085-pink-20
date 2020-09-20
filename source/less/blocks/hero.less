@@ -19,7 +19,7 @@
   .tablet ({
     background-image: url("../img/bg-back-tablet@1x.jpg");
     padding: 32px 0 0;
-    margin-bottom: 46px;
+    margin-bottom: 44px;
 
     .retina ({
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -27,8 +27,16 @@
   });
 
   .desktop ({
-    margin-bottom: 0;
+    margin-bottom: 42px;
   });
+
+  &--page-form {
+    padding-bottom: 0;
+
+    .desktop ({
+      margin-bottom: 0;
+    });
+  }
 
   &--home {
     padding-bottom: 0;
@@ -56,7 +64,12 @@
   margin: auto;
 
   .tablet ({
-    margin-top: 73px;
+    margin-top: 64px;
+    padding-bottom: 40px;
+  });
+
+  .desktop ({
+    padding-bottom: 3px;
   });
 
   &--index {
@@ -70,18 +83,18 @@
   font-weight: 300;
   line-height: 1.3;
   font-size: 24px;
-  padding: 50px 0 23px;
+  padding: 54px 0 23px;
   margin-top: 0;
 
   .tablet ({
-    font-size: 40px;
+    font-size: 50px;
     margin: 0 60px;
     padding-bottom: 92px;
   });
 
   .desktop ({
     font-size: 50px;
-    margin-top: 63px;
+    margin-top: 67px;
   });
 
   &--home {
@@ -104,6 +117,16 @@
       top: 225px;
       left: 16px;
       line-height: 1.4;
+    });
+  }
+
+  &--page-form {
+    .tablet ({
+      padding-bottom: 30px;
+    });
+
+    .desktop ({
+      padding-bottom: 91px;
     });
   }
 }
