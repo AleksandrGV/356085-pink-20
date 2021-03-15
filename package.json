@@ -5,6 +5,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "gulp": "4.0.2",
