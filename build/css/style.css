@@ -292,9 +292,6 @@ img {
 .navigation--closed .navigation__item {
   display: none;
 }
-.navigation--nojs .navigation__toggle {
-  display: none;
-}
 .hero {
   min-height: 220px;
   display: flex;
